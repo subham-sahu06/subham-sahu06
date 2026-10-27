@@ -20,7 +20,7 @@
 
 ```python
 class SubhamSahu:
-    role        = "AI/LLM Engineer in Progress"
+    role        = "Building smart things with AI & LLMs 🚀"
     education   = "Computer Science & Engineering student — AI & ML specialization"
     community   = "Publicity Coordinator & member, IEEE Student Branch (NIST University)"
     research    = "Working on research papers for international conferences"
