@@ -1,6 +1,6 @@
 <!-- ===================== HEADER ===================== -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:3b4261,100:70a5fd&height=200&section=header&text=Subham%20Sahu&fontSize=56&fontColor=ffffff&fontAlignY=36&desc=AI%2FLLM%20Engineer%20in%20Progress&descAlignY=58&descSize=18&animation=fadeIn" alt="Subham Sahu — AI/LLM Engineer in Progress" width="100%" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:3b4261,100:70a5fd&height=200&section=header&text=Subham%20Sahu&fontSize=56&fontColor=ffffff&fontAlignY=36&desc=Building%20Smart%20Things%20with%20AI%20%26%20LLMs&descAlignY=58&descSize=18&animation=fadeIn" alt="Subham Sahu — Building smart things with AI & LLMs" width="100%" />
 </p>
 
 <p align="center">
