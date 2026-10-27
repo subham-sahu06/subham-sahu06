@@ -74,6 +74,23 @@ Also: pandas · currently exploring Large Language Models (LLMs) and LLM applica
   <img src="https://skillicons.dev/icons?i=linux,docker,vscode,git,github" alt="Linux, Docker, VS Code, Git, GitHub" />
 </p>
 
+## 📌 GitHub Overview
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subham-sahu06&theme=tokyonight" alt="GitHub profile overview" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=subham-sahu06&theme=tokyonight" alt="Top languages by repo" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=subham-sahu06&theme=tokyonight" alt="Top languages by commit" width="49%" />
+</p>
+
+## 📈 Contribution Activity
+
+<p align="center">
+  <img src="https://github-activity-graph.vercel.app/graph?username=subham-sahu06&theme=tokyo-night&hide_border=true&area=true" alt="Contribution activity graph" width="100%" />
+</p>
+
 ## 📊 GitHub Analytics
 
 <p align="center">
