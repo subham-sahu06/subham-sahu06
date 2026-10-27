@@ -2,7 +2,11 @@
 
 <h3 align="center">AI/LLM Engineer in Progress | Python | Linux | Open Source Contributor</h3>
 
-I'm a Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning, interested in building useful software, exploring AI/LLM technologies, and contributing to open source.
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=subham-sahu06&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views" />
+</p>
+
+I'm a Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning. I'm interested in building useful software, exploring AI/LLM technologies, and contributing to open source.
 
 - 🤖 Exploring **Artificial Intelligence and Large Language Models (LLMs)**
 - 🌱 Learning **Linux, Git, Open Source Development, and Cloud Technologies**
@@ -18,11 +22,11 @@ I'm a Computer Science and Engineering student specializing in Artificial Intell
 ## 🌐 Connect with Me
 
 <p align="left">
-<a href="https://www.linkedin.com/in/subham-sahu-58164130b/"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn"/></a>
-<a href="https://github.com/subham-sahu06"><img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github" alt="GitHub"/></a>
-<a href="https://www.leetcode.com/subham_sahu01"><img src="https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode" alt="LeetCode"/></a>
-<a href="https://codeforces.com/profile/subhamsahu06"><img src="https://img.shields.io/badge/Codeforces-Profile-blue?style=for-the-badge&logo=codeforces" alt="Codeforces"/></a>
-<a href="https://instagram.com/subham.sahu.01"><img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="https://www.linkedin.com/in/subham-sahu-58164130b/"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="https://github.com/subham-sahu06"><img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github" alt="GitHub" /></a>
+  <a href="https://www.leetcode.com/subham_sahu01"><img src="https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode" alt="LeetCode" /></a>
+  <a href="https://codeforces.com/profile/subhamsahu06"><img src="https://img.shields.io/badge/Codeforces-Profile-blue?style=for-the-badge&logo=codeforces" alt="Codeforces" /></a>
+  <a href="https://instagram.com/subham.sahu.01"><img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
 </p>
 
 ---
@@ -61,7 +65,7 @@ I'm a Computer Science and Engineering student specializing in Artificial Intell
 <a href="https://www.gtk.org/" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg" alt="GTK" width="40" height="40"/></a>
 <a href="https://heroku.com" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="Heroku" width="40" height="40"/></a>
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40"/></a>
-<a href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="Adobe Illustrator" width="40" height="40"/></a>
+<a href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="Illustrator" width="40" height="40"/></a>
 <a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="40" height="40"/></a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></a>
 <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Jenkins" width="40" height="40"/></a>
@@ -109,40 +113,31 @@ I'm a Computer Science and Engineering student specializing in Artificial Intell
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img height="170" src="https://github-stats-extended.vercel.app/api?username=subham-sahu06&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent" alt="GitHub statistics"/>
-  <img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&theme=transparent" alt="Top languages"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=subham-sahu06&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent" alt="GitHub Statistics" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&theme=transparent" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsubham-sahu06&query=%24.public_repos&label=Public%20Repositories&logo=github&color=181717" alt="Public repository count"/>
-  <img src="https://komarev.com/ghpvc/?username=subham-sahu06&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views"/>
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsubham-sahu06&query=%24.public_repos&label=Public%20Repositories&logo=github&color=181717" alt="Public repositories" />
+  <img src="https://komarev.com/ghpvc/?username=subham-sahu06&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views" />
 </p>
 
 ---
 
-<p align="center">
-  <img
-    src="https://github-profile-trophy-liard-delta.vercel.app/?username=subham-sahu06&theme=flat&no-frame=true&margin-w=8&column=6"
-    alt="GitHub Trophies for subham-sahu06"
-    width="100%"
-  />
-</p>
+## 🏆 GitHub Trophies
 
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    GitHub Profile Trophy Project
-  </a>
-  ·
-  <a href="https://github.com/subham-sahu06">
-    View My GitHub Profile
+    <img src="https://github-profile-trophy.vercel.app/?username=subham-sahu06" alt="GitHub Profile Trophies" />
   </a>
 </p>
+
 ---
 
 ## 🔥 Contribution Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=subham-sahu06&theme=transparent" alt="GitHub contribution streak"/>
+  <img src="https://streak-stats.demolab.com/?user=subham-sahu06&theme=transparent" alt="GitHub Contribution Streak" />
 </p>
 
 ---
@@ -150,11 +145,11 @@ I'm a Computer Science and Engineering student specializing in Artificial Intell
 ## 📈 Contribution Graph
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/subham-sahu06" alt="GitHub contribution graph"/>
+  <img src="https://ghchart.rshah.org/subham-sahu06" alt="GitHub Contribution Graph" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/subham-sahu06">View my GitHub profile and native contribution calendar</a>
+  <a href="https://github.com/subham-sahu06">View my GitHub profile and contribution calendar</a>
 </p>
 
 ---
@@ -192,7 +187,7 @@ I aim to contribute through reproducible bug reports, tested fixes, code reviews
 
 ---
 
-## 🏆 Keep Building
+## 💡 Keep Building
 
 I believe in continuous learning, consistent practice, and contributing to meaningful software projects.
 
