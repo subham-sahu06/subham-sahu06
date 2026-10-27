@@ -120,14 +120,23 @@ I'm a Computer Science and Engineering student specializing in Artificial Intell
 
 ---
 
-## 🏆 GitHub Trophies
+<p align="center">
+  <img
+    src="https://github-profile-trophy-liard-delta.vercel.app/?username=subham-sahu06&theme=flat&no-frame=true&margin-w=8&column=6"
+    alt="GitHub Trophies for subham-sahu06"
+    width="100%"
+  />
+</p>
 
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=subham-sahu06" alt="GitHub profile trophies"/>
+    GitHub Profile Trophy Project
+  </a>
+  ·
+  <a href="https://github.com/subham-sahu06">
+    View My GitHub Profile
   </a>
 </p>
-
 ---
 
 ## 🔥 Contribution Streak
