@@ -22,7 +22,7 @@
 class SubhamSahu:
     role        = "AI/LLM Engineer in Progress"
     education   = "Computer Science & Engineering student — AI & ML specialization"
-    community   = "Publicity Coordinator & member, IEEE Student Branch (my college)"
+    community   = "Publicity Coordinator & member, IEEE Student Branch (NIST University)"
     research    = "Working on research papers for international conferences"
     passions    = ["Artificial Intelligence", "Large Language Models", "Cloud"]
 
