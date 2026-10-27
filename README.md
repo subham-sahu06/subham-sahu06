@@ -45,80 +45,55 @@ An AI-focused trading project. Visit the repository for its implementation, feat
 **Programming Languages**
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" title="Python" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" title="Java" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="Bash" title="Bash" width="40" height="40"/>
+  <img src="https://skillicons.dev/icons?i=python,cpp,java,js,bash" alt="Python, C++, Java, JavaScript, Bash" />
 </p>
 
 **AI, ML & LLMs**
 
 <p align="left">
-  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch" title="PyTorch" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="TensorFlow" title="TensorFlow" width="40" height="40"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn" title="scikit-learn" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="OpenCV" title="OpenCV" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" title="pandas" width="40" height="40"/>
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv" alt="PyTorch, TensorFlow, scikit-learn, OpenCV" />
 </p>
 
-Currently exploring: Large Language Models (LLMs) and LLM application development.
+Also: pandas · currently exploring Large Language Models (LLMs) and LLM application development.
 
 **Frameworks & Libraries**
 
 <p align="left">
-  <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="Flask" title="Flask" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" title="React" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" title="Node.js" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" title="HTML5" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" title="CSS3" width="40" height="40"/>
+  <img src="https://skillicons.dev/icons?i=fastapi,flask,react,nodejs,html,css" alt="FastAPI, Flask, React, Node.js, HTML, CSS" />
 </p>
-
-Also used in projects: FastAPI.
 
 **Databases & Cloud**
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" title="PostgreSQL" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" title="MySQL" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" title="MongoDB" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg" alt="Appwrite" title="Appwrite" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" title="Azure" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="Google Cloud" title="Google Cloud" width="40" height="40"/>
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,appwrite,aws,azure,gcp" alt="PostgreSQL, MySQL, MongoDB, Appwrite, AWS, Azure, Google Cloud" />
 </p>
 
 **Linux, Developer Tools & Open Source**
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" title="Linux" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" title="Docker" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" title="Git" width="40" height="40"/>
+  <img src="https://skillicons.dev/icons?i=linux,docker,vscode,git,github" alt="Linux, Docker, VS Code, Git, GitHub" />
 </p>
-
-Git/GitHub workflows and open-source contribution are a current focus.
 
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="./profile/overview.svg" alt="Public repositories, stars earned and contributions in the last year" width="100%" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsubham-sahu06&query=%24.public_repos&label=Public%20repos&color=70a5fd&style=for-the-badge&logo=github" alt="Public repositories" />
+  <img src="https://img.shields.io/github/stars/subham-sahu06?affiliations=OWNER&label=Total%20stars&color=bf91f3&style=for-the-badge&logo=github" alt="Total stars" />
 </p>
 
 <p align="center">
-  <img src="./profile/stats.svg" alt="GitHub stats: stars, commits, PRs, issues" height="170" />
-  <img src="./profile/top-langs.svg" alt="Most used languages" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=subham-sahu06&show_icons=true&rank_icon=github&theme=tokyonight&hide_border=true" alt="GitHub stats" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Most used languages" height="170" />
 </p>
 
 <p align="center">
-  <img src="./profile/streak.svg" alt="Current and longest contribution streak" />
+  <img src="https://streak-stats.demolab.com/?user=subham-sahu06&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
 </p>
 
 <p align="center">
-  <img src="./profile/activity-graph.svg" alt="Contribution activity over the last 31 days" width="100%" />
+  <img src="https://ghchart.rshah.org/subham-sahu06" alt="Contribution graph" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./profile/trophy.svg" alt="GitHub profile trophies" />
+  <img src="https://github-trophies.vercel.app/?username=subham-sahu06&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" alt="GitHub trophies" />
 </p>
-
-<p align="center"><sub>Cards are generated daily by a GitHub Actions workflow in this repository.</sub></p>
