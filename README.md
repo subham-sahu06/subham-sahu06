@@ -141,8 +141,10 @@ Also: pandas · currently exploring Large Language Models (LLMs) and LLM applica
 
 ## 📈 Contribution Activity
 
+<!-- Cards in ./assets are regenerated hourly by .github/workflows/update-profile-stats.yml -->
+
 <p align="center">
-  <img src="https://github-activity-graph.vercel.app/graph?username=subham-sahu06&bg_color=161b22&color=e6edf3&line=C9A96E&point=e6edf3&area=true&area_color=C9A96E&hide_border=true" alt="Contribution activity graph" width="100%" />
+  <img src="./assets/activity.svg" alt="Contribution activity graph" width="100%" />
 </p>
 
 ## 📊 GitHub Analytics
@@ -153,16 +155,16 @@ Also: pandas · currently exploring Large Language Models (LLMs) and LLM applica
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=subham-sahu06&show_icons=true&rank_icon=github&hide_border=true&bg_color=161b22&title_color=C9A96E&icon_color=C9A96E&text_color=e6edf3&ring_color=C9A96E" alt="GitHub stats" height="170" />
+  <img src="./assets/stats.svg" alt="GitHub stats" height="170" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&langs_count=8&hide_border=true&bg_color=161b22&title_color=C9A96E&text_color=e6edf3" alt="Most used languages" height="170" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=subham-sahu06&hide_border=true&background=161b22&ring=C9A96E&fire=C9A96E&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=C9A96E&sideLabels=C9A96E&dates=8b949e&stroke=30363d" alt="GitHub contribution streak" />
+  <img src="./assets/streak.svg" alt="GitHub contribution streak" />
 </p>
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/C9A96E/subham-sahu06" alt="Contribution graph" width="100%" />
+  <img src="./assets/contributions.svg" alt="Contribution graph" width="100%" />
 </p>
 
 <p align="center">
