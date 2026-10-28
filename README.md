@@ -139,14 +139,6 @@ Also: pandas · currently exploring Large Language Models (LLMs) and LLM applica
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=subham-sahu06&theme=dark" alt="Top languages by commit" width="49%" />
 </p>
 
-## 📈 Contribution Activity
-
-<!-- Cards in ./assets are regenerated hourly by .github/workflows/update-profile-stats.yml -->
-
-<p align="center">
-  <img src="./assets/activity.svg" alt="Contribution activity graph" width="100%" />
-</p>
-
 ## 📊 GitHub Analytics
 
 <p align="center">
@@ -155,16 +147,7 @@ Also: pandas · currently exploring Large Language Models (LLMs) and LLM applica
 </p>
 
 <p align="center">
-  <img src="./assets/stats.svg" alt="GitHub stats" height="170" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&langs_count=8&hide_border=true&bg_color=161b22&title_color=C9A96E&text_color=e6edf3" alt="Most used languages" height="170" />
-</p>
-
-<p align="center">
-  <img src="./assets/streak.svg" alt="GitHub contribution streak" />
-</p>
-
-<p align="center">
-  <img src="./assets/contributions.svg" alt="Contribution graph" width="100%" />
 </p>
 
 <p align="center">
