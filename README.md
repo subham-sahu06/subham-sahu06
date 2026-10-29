@@ -1,310 +1,174 @@
-subham@subham-Nitro-ANV15-41:~/checkstyle$ grep -n -i -C 3 'jacoco\|offline' pom.xml
-206-    <spotbugs.plugin.version>4.10.5.0</spotbugs.plugin.version>
-207-    <pmd.plugin.version>3.28.0</pmd.plugin.version>
-208-    <pmd.version>7.27.0</pmd.version>
-209:    <jacoco.plugin.version>0.8.15</jacoco.plugin.version>
-210-    <mockito.version>5.2.0</mockito.version>
-211-    <slf4j.version>2.0.20</slf4j.version>
-212-    <saxon.version>13.1</saxon.version>
---
-471-      <scope>runtime</scope>
-472-    </dependency>
-473-    <dependency>
-474:      <groupId>org.jacoco</groupId>
-475:      <artifactId>org.jacoco.agent</artifactId>
-476:      <version>${jacoco.plugin.version}</version>
-477-      <classifier>runtime</classifier>
-478-      <scope>test</scope>
-479-    </dependency>
---
-1117-      </plugin>
-1118-
-1119-      <plugin>
-1120:        <groupId>org.jacoco</groupId>
-1121:        <artifactId>jacoco-maven-plugin</artifactId>
-1122:        <version>${jacoco.plugin.version}</version>
-1123-        <executions>
-1124-          <execution>
-1125-            <id>default-instrument</id>
---
-1855-        <configuration>
-1856-          <useModulePath>false</useModulePath>
-1857-          <systemPropertyVariables>
-1858:            <jacoco-agent.destfile>${project.build.directory}/jacoco.exec</jacoco-agent.destfile>
-1859-            <!-- Virtual AWT driver for GUI unit tests -->
-1860-            <awt.toolkit>com.github.caciocavallosilano.cacio.ctc.CTCToolkit</awt.toolkit>
-1861-            <java.awt.headless>false</java.awt.headless>
---
-2309-              </includes>
-2310-              <excludes>
-2311-                <!-- Skip auto-generated reports that have no authored links -->
-2312:                <exclude>jacoco/**</exclude>
-2313-                <exclude>xref/**</exclude>
-2314-                <exclude>xref-test/**</exclude>
-2315-                <exclude>dsm/**</exclude>
---
-2508-        <spotbugs.skip>true</spotbugs.skip>
-2509-        <xml.skip>true</xml.skip>
-2510-        <forbiddenapis.skip>true</forbiddenapis.skip>
-2511:        <jacoco.skip>true</jacoco.skip>
-2512-        <maven.javadoc.skip>true</maven.javadoc.skip>
-2513-        <linkcheck.skip>true</linkcheck.skip>
-2514-        <jdepend.skip>true</jdepend.skip>
---
-2533-    </profile>
-2534-
-2535-    <profile>
-2536:      <!-- Profile for lychee offline mode (internal links only) -->
-2537:      <id>lychee-offline</id>
-2538-      <build>
-2539-        <plugins>
-2540-          <plugin>
---
-2542-            <artifactId>lychee-maven-plugin</artifactId>
-2543-            <configuration>
-2544-              <args>
-2545:                <arg>--offline</arg>
-2546-                <arg>--config</arg>
-2547-                <arg>${project.basedir}/config/lychee.toml</arg>
-2548-                <arg>--root-dir</arg>
---
-3298-    <profile>
-3299-      <id>pitest-misc</id>
-3300-      <properties>
-3301:        <jacoco.skip>true</jacoco.skip>
-3302-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-3303-      </properties>
-3304-      <build>
---
-3419-    <profile>
-3420-      <id>pitest-annotation</id>
-3421-      <properties>
-3422:        <jacoco.skip>true</jacoco.skip>
-3423-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-3424-      </properties>
-3425-      <build>
---
-3484-    <profile>
-3485-      <id>pitest-blocks</id>
-3486-      <properties>
-3487:        <jacoco.skip>true</jacoco.skip>
-3488-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-3489-      </properties>
-3490-      <build>
---
-3549-    <profile>
-3550-      <id>pitest-coding-1</id>
-3551-      <properties>
-3552:        <jacoco.skip>true</jacoco.skip>
-3553-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-3554-      </properties>
-3555-      <build>
---
-3687-    <profile>
-3688-      <id>pitest-coding-2</id>
-3689-      <properties>
-3690:        <jacoco.skip>true</jacoco.skip>
-3691-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-3692-      </properties>
-3693-      <build>
---
-3827-    <profile>
-3828-      <id>pitest-coding-require-this-check</id>
-3829-      <properties>
-3830:        <jacoco.skip>true</jacoco.skip>
-3831-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-3832-      </properties>
-3833-      <build>
---
-3889-    <profile>
-3890-      <id>pitest-design</id>
-3891-      <properties>
-3892:        <jacoco.skip>true</jacoco.skip>
-3893-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-3894-      </properties>
-3895-      <build>
---
-3951-    <profile>
-3952-      <id>pitest-header</id>
-3953-      <properties>
-3954:        <jacoco.skip>true</jacoco.skip>
-3955-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-3956-      </properties>
-3957-      <build>
---
-4013-    <profile>
-4014-      <id>pitest-imports</id>
-4015-      <properties>
-4016:        <jacoco.skip>true</jacoco.skip>
-4017-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4018-      </properties>
-4019-      <build>
---
-4079-    <profile>
-4080-      <id>pitest-indentation</id>
-4081-      <properties>
-4082:        <jacoco.skip>true</jacoco.skip>
-4083-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4084-      </properties>
-4085-      <build>
---
-4129-    <profile>
-4130-      <id>pitest-javadoc</id>
-4131-      <properties>
-4132:        <jacoco.skip>true</jacoco.skip>
-4133-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4134-      </properties>
-4135-      <build>
---
-4204-    <profile>
-4205-      <id>pitest-metrics</id>
-4206-      <properties>
-4207:        <jacoco.skip>true</jacoco.skip>
-4208-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4209-      </properties>
-4210-      <build>
---
-4266-    <profile>
-4267-      <id>pitest-modifier</id>
-4268-      <properties>
-4269:        <jacoco.skip>true</jacoco.skip>
-4270-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4271-      </properties>
-4272-      <build>
---
-4331-    <profile>
-4332-      <id>pitest-modules</id>
-4333-      <properties>
-4334:        <jacoco.skip>true</jacoco.skip>
-4335-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4336-      </properties>
-4337-      <build>
---
-4396-    <profile>
-4397-      <id>pitest-naming</id>
-4398-      <properties>
-4399:        <jacoco.skip>true</jacoco.skip>
-4400-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4401-      </properties>
-4402-      <build>
---
-4461-    <profile>
-4462-      <id>pitest-regexp</id>
-4463-      <properties>
-4464:        <jacoco.skip>true</jacoco.skip>
-4465-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4466-      </properties>
-4467-      <build>
---
-4523-    <profile>
-4524-      <id>pitest-sizes</id>
-4525-      <properties>
-4526:        <jacoco.skip>true</jacoco.skip>
-4527-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4528-      </properties>
-4529-      <build>
---
-4585-    <profile>
-4586-      <id>pitest-whitespace</id>
-4587-      <properties>
-4588:        <jacoco.skip>true</jacoco.skip>
-4589-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4590-      </properties>
-4591-      <build>
---
-4651-    <profile>
-4652-      <id>pitest-ant</id>
-4653-      <properties>
-4654:        <jacoco.skip>true</jacoco.skip>
-4655-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4656-      </properties>
-4657-      <build>
---
-4717-    <profile>
-4718-      <id>pitest-packagenamesloader</id>
-4719-      <properties>
-4720:        <jacoco.skip>true</jacoco.skip>
-4721-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4722-      </properties>
-4723-      <build>
---
-4776-    <profile>
-4777-      <id>pitest-common</id>
-4778-      <properties>
-4779:        <jacoco.skip>true</jacoco.skip>
-4780-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4781-      </properties>
-4782-      <build>
---
-4916-    <profile>
-4917-      <id>pitest-common-2</id>
-4918-      <properties>
-4919:        <jacoco.skip>true</jacoco.skip>
-4920-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-4921-      </properties>
-4922-      <build>
---
-5005-    <profile>
-5006-      <id>pitest-main</id>
-5007-      <properties>
-5008:        <jacoco.skip>true</jacoco.skip>
-5009-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-5010-      </properties>
-5011-      <build>
---
-5069-    <profile>
-5070-      <id>pitest-tree-walker</id>
-5071-      <properties>
-5072:        <jacoco.skip>true</jacoco.skip>
-5073-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-5074-      </properties>
-5075-      <build>
---
-5188-    <profile>
-5189-      <id>pitest-api</id>
-5190-      <properties>
-5191:        <jacoco.skip>true</jacoco.skip>
-5192-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-5193-      </properties>
-5194-      <build>
---
-5277-    <profile>
-5278-      <id>pitest-filters</id>
-5279-      <properties>
-5280:        <jacoco.skip>true</jacoco.skip>
-5281-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-5282-      </properties>
-5283-      <build>
---
-5353-    <profile>
-5354-      <id>pitest-utils</id>
-5355-      <properties>
-5356:        <jacoco.skip>true</jacoco.skip>
-5357-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-5358-      </properties>
-5359-      <build>
---
-5537-    <profile>
-5538-      <id>pitest-gui</id>
-5539-      <properties>
-5540:        <jacoco.skip>true</jacoco.skip>
-5541-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-5542-      </properties>
-5543-      <build>
---
-5608-    <profile>
-5609-      <id>pitest-xpath</id>
-5610-      <properties>
-5611:        <jacoco.skip>true</jacoco.skip>
-5612-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-5613-      </properties>
-5614-      <build>
---
-5681-    <profile>
-5682-      <id>pitest-java-ast-visitor</id>
-5683-      <properties>
-5684:        <jacoco.skip>true</jacoco.skip>
-5685-        <checkstyle.skipCompileInputResources>true</checkstyle.skipCompileInputResources>
-5686-      </properties>
-5687-      <build>
-subham@subham-Nitro-ANV15-41:~/checkstyle$ 
+<!-- ===================== HEADER ===================== -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:161b22&height=200&section=header&text=Subham%20Sahu&fontSize=56&fontColor=C9A96E&fontAlignY=36&desc=Building%20Smart%20Things%20with%20AI%20and%20LLMs&descAlignY=58&descSize=18&animation=fadeIn" alt="Subham Sahu — Building smart things with AI & LLMs" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=C9A96E&center=true&vCenter=true&width=620&lines=Hi+%F0%9F%91%8B%2C+I'm+Subham+Sahu;CSE+(AI+%26+ML)+Student;Exploring+Large+Language+Models;Linux+%E2%80%A2+Git+%E2%80%A2+Open+Source+Contributor" alt="Typing intro" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=C9A96E" alt="Python" />
+  <img src="https://img.shields.io/badge/Linux-161b22?style=flat-square&logo=linux&logoColor=C9A96E" alt="Linux" />
+  <img src="https://img.shields.io/badge/LLMs-161b22?style=flat-square&logo=openai&logoColor=C9A96E" alt="LLMs" />
+  <img src="https://img.shields.io/badge/Open%20Source-161b22?style=flat-square&logo=github&logoColor=C9A96E" alt="Open Source Contributor" />
+  <img src="https://komarev.com/ghpvc/?username=subham-sahu06&label=Profile%20views&color=C9A96E&style=flat-square" alt="Profile views" />
+</p>
+
+<!-- ===================== ABOUT ===================== -->
+## 👨‍💻 About Me
+
+```python
+class SubhamSahu:
+    role        = "Building smart things with AI & LLMs 🚀"
+    education   = "Computer Science & Engineering student — AI & ML specialization"
+    community   = "Publicity Coordinator & member, IEEE Student Branch (NIST University)"
+    research    = "Working on research papers for international conferences"
+    passions    = ["Artificial Intelligence", "Large Language Models", "Cloud"]
+
+    currently   = "Contributing to open source & exploring AI/LLM technologies"
+    learning    = ["LLMs", "Linux", "Git", "Open-source development", "Cloud technologies"]
+    collab_on   = ["Open-source projects", "AI/LLM applications", "Developer tools"]
+    need_help   = ["Open-source project architecture", "LLM engineering",
+                   "Contributing to large-scale codebases"]
+    ask_me      = ["Python", "Git/GitHub", "Linux", "DSA", "AI/LLM projects"]
+    fun_fact    = "I enjoy solving problems, exploring open source & building with AI ⚡"
+```
+
+<!-- ===================== CONNECT ===================== -->
+## 🌐 Connect with Me
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/subham-sahu-58164130b" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=C9A96E" alt="LinkedIn" /></a>
+  <a href="https://instagram.com/subham.sahu.01" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Instagram-161b22?style=for-the-badge&logo=instagram&logoColor=C9A96E" alt="Instagram" /></a>
+  <a href="https://codeforces.com/profile/subhamsahu06" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Codeforces-161b22?style=for-the-badge&logo=codeforces&logoColor=C9A96E" alt="Codeforces" /></a>
+  <a href="https://www.leetcode.com/subham_sahu01" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/LeetCode-161b22?style=for-the-badge&logo=leetcode&logoColor=C9A96E" alt="LeetCode" /></a>
+  <a href="mailto:subhamsahu12927@gmail.com"><img src="https://img.shields.io/badge/Gmail-161b22?style=for-the-badge&logo=gmail&logoColor=C9A96E" alt="Email" /></a>
+</p>
+
+<!-- ===================== PROJECTS ===================== -->
+## 🚀 Featured Projects
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+
+### 🔬 Sentinel Fovea 2.5D
+
+A tactical autonomous **UGV perception & control console** with a foveated 2.5D LiDAR grid and a live dashboard.
+
+<img src="https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=C9A96E" alt="Python" />
+<img src="https://img.shields.io/badge/ROS%202-161b22?style=flat-square&logo=ros&logoColor=C9A96E" alt="ROS 2" />
+<img src="https://img.shields.io/badge/ONNX-161b22?style=flat-square&logo=onnx&logoColor=C9A96E" alt="ONNX" />
+<img src="https://img.shields.io/badge/Three.js-161b22?style=flat-square&logo=threedotjs&logoColor=C9A96E" alt="Three.js" />
+
+<a href="https://github.com/subham-sahu06/sentinel-fovea-2.5d"><img src="https://img.shields.io/badge/View%20Repo-C9A96E?style=for-the-badge&logo=github&logoColor=0d1117" alt="View repository" /></a>
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🔐 OSDAG Secure Login
+
+Secure **login & file-access** system with a custom backend (FastAPI + PostgreSQL) and a managed backend (Appwrite).
+
+<img src="https://img.shields.io/badge/FastAPI-161b22?style=flat-square&logo=fastapi&logoColor=C9A96E" alt="FastAPI" />
+<img src="https://img.shields.io/badge/PostgreSQL-161b22?style=flat-square&logo=postgresql&logoColor=C9A96E" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/Appwrite-161b22?style=flat-square&logo=appwrite&logoColor=C9A96E" alt="Appwrite" />
+
+<a href="https://github.com/subham-sahu06/osdag-secure-login-system"><img src="https://img.shields.io/badge/View%20Repo-C9A96E?style=for-the-badge&logo=github&logoColor=0d1117" alt="View repository" /></a>
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🤖 AI Trade Manager
+
+An **AI-focused trading project**. Visit the repository for its implementation, features, and technical details.
+
+<img src="https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=C9A96E" alt="Python" />
+<img src="https://img.shields.io/badge/AI-161b22?style=flat-square" alt="AI" />
+
+<a href="https://github.com/subham-sahu06/AI-Trade-manager"><img src="https://img.shields.io/badge/View%20Repo-C9A96E?style=for-the-badge&logo=github&logoColor=0d1117" alt="View repository" /></a>
+
+</td>
+</tr>
+</table>
+
+<!-- ===================== STACK & STATS ===================== -->
+## 🛠️ Tech Stack
+
+**Programming Languages**
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,cpp,java,js,bash&theme=dark" alt="Python, C++, Java, JavaScript, Bash" />
+</p>
+
+**AI, ML & LLMs**
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=dark" alt="PyTorch, TensorFlow, scikit-learn, OpenCV" />
+</p>
+
+Also: pandas · currently exploring Large Language Models (LLMs) and LLM application development.
+
+**Frameworks & Libraries**
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=fastapi,flask,react,nodejs,html,css&theme=dark" alt="FastAPI, Flask, React, Node.js, HTML, CSS" />
+</p>
+
+**Databases & Cloud**
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,appwrite,aws,azure,gcp&theme=dark" alt="PostgreSQL, MySQL, MongoDB, Appwrite, AWS, Azure, Google Cloud" />
+</p>
+
+**Linux, Developer Tools & Open Source**
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=linux,docker,vscode,git,github&theme=dark" alt="Linux, Docker, VS Code, Git, GitHub" />
+</p>
+
+## 📌 GitHub Overview
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subham-sahu06&theme=dark" alt="GitHub profile overview" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=subham-sahu06&theme=dark" alt="Top languages by repo" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=subham-sahu06&theme=dark" alt="Top languages by commit" width="49%" />
+</p>
+
+## 📈 Contribution Activity
+
+<p align="center">
+  <img src="https://github-activity-graph.vercel.app/graph?username=subham-sahu06&bg_color=161b22&color=e6edf3&line=C9A96E&point=e6edf3&area=true&area_color=C9A96E&hide_border=true" alt="Contribution activity graph" width="100%" />
+</p>
+
+## 📊 GitHub Analytics
+
+<p align="center">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsubham-sahu06&query=%24.public_repos&label=Public%20repos&color=C9A96E&labelColor=161b22&style=for-the-badge&logo=github" alt="Public repositories" />
+  <img src="https://img.shields.io/github/stars/subham-sahu06?affiliations=OWNER&label=Total%20stars&color=C9A96E&labelColor=161b22&style=for-the-badge&logo=github" alt="Total stars" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=subham-sahu06&show_icons=true&rank_icon=github&hide_border=true&bg_color=161b22&title_color=C9A96E&icon_color=C9A96E&text_color=e6edf3&ring_color=C9A96E" alt="GitHub stats" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&langs_count=8&hide_border=true&bg_color=161b22&title_color=C9A96E&text_color=e6edf3" alt="Most used languages" height="170" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=subham-sahu06&hide_border=true&background=161b22&ring=C9A96E&fire=C9A96E&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=C9A96E&sideLabels=C9A96E&dates=8b949e&stroke=30363d" alt="GitHub contribution streak" />
+</p>
+
+<p align="center">
+  <img src="https://ghchart.rshah.org/C9A96E/subham-sahu06" alt="Contribution graph" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-trophies.vercel.app/?username=subham-sahu06&theme=apprentice&no-frame=true&no-bg=true&margin-w=8&row=1" alt="GitHub trophies" />
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:161b22,100:0d1117&height=120&section=footer" alt="" width="100%" />
+</p>
