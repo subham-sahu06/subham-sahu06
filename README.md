@@ -153,7 +153,7 @@ Also: pandas · currently exploring Large Language Models (LLMs) and LLM applica
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=subham-sahu06&show_icons=true&rank_icon=github&hide_border=true&bg_color=161b22&title_color=C9A96E&icon_color=C9A96E&text_color=e6edf3&ring_color=C9A96E" alt="GitHub stats" height="170" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=subham-sahu06&theme=dark" alt="GitHub stats" height="170" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&langs_count=8&hide_border=true&bg_color=161b22&title_color=C9A96E&text_color=e6edf3" alt="Most used languages" height="170" />
 </p>
 
