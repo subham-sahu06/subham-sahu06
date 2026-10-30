@@ -40,11 +40,32 @@ class SubhamSahu:
 
 <p align="center">
   <a href="https://www.linkedin.com/in/subham-sahu-58164130b" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=58A6FF" alt="LinkedIn" /></a>
-  <a href="https://instagram.com/subham.sahu.01" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Instagram-161b22?style=for-the-badge&logo=instagram&logoColor=58A6FF" alt="Instagram" /></a>
   <a href="https://codeforces.com/profile/subhamsahu06" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Codeforces-161b22?style=for-the-badge&logo=codeforces&logoColor=58A6FF" alt="Codeforces" /></a>
   <a href="https://www.leetcode.com/subham_sahu01" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/LeetCode-161b22?style=for-the-badge&logo=leetcode&logoColor=58A6FF" alt="LeetCode" /></a>
   <a href="mailto:subhamsahu12927@gmail.com"><img src="https://img.shields.io/badge/Gmail-161b22?style=for-the-badge&logo=gmail&logoColor=58A6FF" alt="Email" /></a>
 </p>
+
+<!-- ===================== OPEN SOURCE ===================== -->
+## 🌱 Open Source Contributions
+
+<table>
+<tr><th>Organization</th><th>Contribution</th><th>Status</th></tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cups-snap/pull/41">cups-snap #41</a>: Fixed truncation of long system queue names by replacing a fixed 32-byte buffer with <code>HTTP_MAX_URI</code> in <code>cups-proxyd</code> (C)</td>
+<td><img src="https://img.shields.io/badge/Merged-58A6FF?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>ArduPilot</b></td>
+<td><a href="https://github.com/ArduPilot/ardupilot/pull/34927">ardupilot #34927</a>: Reject invalid SBUS data frames so they are not accepted as RC input (C++)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>FOSSi Foundation</b></td>
+<td><a href="https://github.com/fossi-foundation/fossi-foundation-web/pull/338">fossi-foundation-web #338</a>: Clarified local preview instructions in the website README (fixes #223)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
+</tr>
+</table>
 
 <!-- ===================== PROJECTS ===================== -->
 ## 🚀 Featured Projects
@@ -82,7 +103,7 @@ Secure **login & file-access** system with a custom backend (FastAPI + PostgreSQ
 
 ### 🤖 AI Trade Manager
 
-An **AI-focused trading project**. Visit the repository for its implementation, features, and technical details.
+A Python project that applies **AI to trading workflows** to help manage and analyse trades.
 
 <img src="https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=58A6FF" alt="Python" />
 <img src="https://img.shields.io/badge/AI-161b22?style=flat-square" alt="AI" />
@@ -99,33 +120,27 @@ An **AI-focused trading project**. Visit the repository for its implementation, 
 **Programming Languages**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,cpp,java,js,bash&theme=dark" alt="Python, C++, Java, JavaScript, Bash" />
+  <img src="https://skillicons.dev/icons?i=python,c,cpp,js&theme=dark" alt="Python, C, C++, JavaScript" />
 </p>
 
 **AI, ML & LLMs**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=dark" alt="PyTorch, TensorFlow, scikit-learn, OpenCV" />
+  <img src="https://skillicons.dev/icons?i=pytorch,opencv&theme=dark" alt="PyTorch, OpenCV" />
 </p>
 
-Also: pandas · currently exploring Large Language Models (LLMs) and LLM application development.
+Also: ONNX · ROS 2 · currently exploring LLM application development.
 
-**Frameworks & Libraries**
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=fastapi,flask,react,nodejs,html,css&theme=dark" alt="FastAPI, Flask, React, Node.js, HTML, CSS" />
-</p>
-
-**Databases & Cloud**
+**Backend & Databases**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,appwrite,aws,azure,gcp&theme=dark" alt="PostgreSQL, MySQL, MongoDB, Appwrite, AWS, Azure, Google Cloud" />
+  <img src="https://skillicons.dev/icons?i=fastapi,postgres,appwrite,threejs&theme=dark" alt="FastAPI, PostgreSQL, Appwrite, Three.js" />
 </p>
 
 **Linux, Developer Tools & Open Source**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=linux,docker,vscode,git,github&theme=dark" alt="Linux, Docker, VS Code, Git, GitHub" />
+  <img src="https://skillicons.dev/icons?i=linux,git,github,docker&theme=dark" alt="Linux, Git, GitHub, Docker" />
 </p>
 
 ## 📌 GitHub Overview
@@ -153,8 +168,8 @@ Also: pandas · currently exploring Large Language Models (LLMs) and LLM applica
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=subham-sahu06&show_icons=true&rank_icon=github&hide_border=true&bg_color=161b22&title_color=58A6FF&icon_color=58A6FF&text_color=e6edf3&ring_color=58A6FF" alt="GitHub stats" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&langs_count=8&hide_border=true&bg_color=161b22&title_color=58A6FF&text_color=e6edf3" alt="Most used languages" height="170" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=subham-sahu06&theme=github_dark" alt="GitHub stats" height="170" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=subham-sahu06&theme=github_dark&utcOffset=5.5" alt="Productive time" height="170" />
 </p>
 
 <p align="center">
