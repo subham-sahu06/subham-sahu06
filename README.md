@@ -48,6 +48,7 @@ class SubhamSahu:
 <!-- ===================== OPEN SOURCE ===================== -->
 ## 🌱 Open Source Contributions
 
+<!-- OSS-CONTRIBUTIONS:START -->
 <table>
 <tr><th>Organization</th><th>Contribution</th><th>Status</th></tr>
 <tr>
@@ -66,6 +67,7 @@ class SubhamSahu:
 <td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
 </tr>
 </table>
+<!-- OSS-CONTRIBUTIONS:END -->
 
 <!-- ===================== PROJECTS ===================== -->
 ## 🚀 Featured Projects
