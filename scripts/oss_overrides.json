@@ -4,6 +4,19 @@
     "sub": "The Linux Foundation",
     "desc": "Fixed truncation of long system queue names by replacing a fixed 32-byte buffer with <code>HTTP_MAX_URI</code> in <code>cups-proxyd</code> (C)"
   },
+  "OpenPrinting/cups-snap#43": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Removed echoed temporary queues from the system's CUPS, so <code>cups-proxyd</code> no longer leaves orphaned loopback queues on the host (C, fixes #39)"
+  },
+  "OpenPrinting/legacy-drivers#30": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Preserved the Mitsubishi CP50 Ghostscript driver from Ghostscript 9.22, with provenance, license notes and tested build instructions (fixes #26)"
+  },
+  "eclipse-platform/eclipse.platform#3048": {
+    "org": "Eclipse Foundation"
+  },
   "ArduPilot/ardupilot#34927": {
     "org": "ArduPilot",
     "desc": "Reject invalid SBUS data frames so they are not accepted as RC input (C++)"
