@@ -1,0 +1,15 @@
+{
+  "OpenPrinting/cups-snap#41": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Fixed truncation of long system queue names by replacing a fixed 32-byte buffer with <code>HTTP_MAX_URI</code> in <code>cups-proxyd</code> (C)"
+  },
+  "ArduPilot/ardupilot#34927": {
+    "org": "ArduPilot",
+    "desc": "Reject invalid SBUS data frames so they are not accepted as RC input (C++)"
+  },
+  "fossi-foundation/fossi-foundation-web#338": {
+    "org": "FOSSi Foundation",
+    "desc": "Clarified local preview instructions in the website README (fixes #223)"
+  }
+}
