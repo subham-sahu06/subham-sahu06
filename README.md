@@ -52,9 +52,24 @@ class SubhamSahu:
 <table>
 <tr><th>Organization</th><th>Contribution</th><th>Status</th></tr>
 <tr>
+<td><b>OpenPrinting</b></td>
+<td><a href="https://github.com/OpenPrinting/cups-snap/pull/43">cups-snap #43</a>: cups-proxyd: Remove echoed temporary queue from the system&#x27;s CUPS</td>
+<td><img src="https://img.shields.io/badge/Merged-58A6FF?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
+</tr>
+<tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/cups-snap/pull/41">cups-snap #41</a>: Fixed truncation of long system queue names by replacing a fixed 32-byte buffer with <code>HTTP_MAX_URI</code> in <code>cups-proxyd</code> (C)</td>
 <td><img src="https://img.shields.io/badge/Merged-58A6FF?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/30">legacy-drivers #30</a>: Add cp50 driver (Mitsubishi CP50) from Ghostscript 9.22</td>
+<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>FOSSi Foundation</b></td>
+<td><a href="https://github.com/fossi-foundation/fossi-foundation-web/pull/338">fossi-foundation-web #338</a>: Clarified local preview instructions in the website README (fixes #223)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
 </tr>
 <tr>
 <td><b>ArduPilot</b></td>
@@ -62,8 +77,8 @@ class SubhamSahu:
 <td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
 </tr>
 <tr>
-<td><b>FOSSi Foundation</b></td>
-<td><a href="https://github.com/fossi-foundation/fossi-foundation-web/pull/338">fossi-foundation-web #338</a>: Clarified local preview instructions in the website README (fixes #223)</td>
+<td><b>eclipse-platform</b></td>
+<td><a href="https://github.com/eclipse-platform/eclipse.platform/pull/3048">eclipse.platform #3048</a>: Drop stale shadowed folds of the editor right away in Unified Diff</td>
 <td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
 </tr>
 </table>
