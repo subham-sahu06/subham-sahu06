@@ -66,21 +66,6 @@ class SubhamSahu:
 <td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/30">legacy-drivers #30</a>: Preserved the Mitsubishi CP50 Ghostscript driver from Ghostscript 9.22, with provenance, license notes and tested build instructions (fixes #26)</td>
 <td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
 </tr>
-<tr>
-<td><b>FOSSi Foundation</b></td>
-<td><a href="https://github.com/fossi-foundation/fossi-foundation-web/pull/338">fossi-foundation-web #338</a>: Clarified local preview instructions in the website README (fixes #223)</td>
-<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
-</tr>
-<tr>
-<td><b>ArduPilot</b></td>
-<td><a href="https://github.com/ArduPilot/ardupilot/pull/34927">ardupilot #34927</a>: Reject invalid SBUS data frames so they are not accepted as RC input (C++)</td>
-<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
-</tr>
-<tr>
-<td><b>Eclipse Foundation</b></td>
-<td><a href="https://github.com/eclipse-platform/eclipse.platform/pull/3048">eclipse.platform #3048</a>: Drop stale shadowed folds of the editor right away in Unified Diff</td>
-<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
-</tr>
 </table>
 <!-- OSS-CONTRIBUTIONS:END -->
 
