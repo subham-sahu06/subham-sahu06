@@ -17,6 +17,7 @@ import urllib.request
 from pathlib import Path
 
 USERNAME = os.environ.get("GH_USERNAME", "subham-sahu06")
+INCLUDE_OWNERS = {o.strip().lower() for o in os.environ.get("INCLUDE_OWNERS", "").split(",") if o.strip()}
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 OVERRIDES = ROOT / "scripts" / "oss_overrides.json"
@@ -54,6 +55,8 @@ def to_rows(items, overrides):
     for it in items:
         repo = it["repository_url"].split("/repos/", 1)[1]  # owner/name
         owner, name = repo.split("/")
+        if INCLUDE_OWNERS and owner.lower() not in INCLUDE_OWNERS:
+            continue  # only show the organizations listed in INCLUDE_OWNERS
         number = it["number"]
         merged = bool((it.get("pull_request") or {}).get("merged_at"))
         if it["state"] == "closed" and not merged:

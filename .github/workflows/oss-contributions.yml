@@ -22,6 +22,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: subham-sahu06
+          INCLUDE_OWNERS: OpenPrinting
         run: python scripts/update_oss.py
 
       - name: Commit if changed
