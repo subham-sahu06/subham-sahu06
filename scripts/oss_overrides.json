@@ -24,5 +24,10 @@
   "fossi-foundation/fossi-foundation-web#338": {
     "org": "FOSSi Foundation",
     "desc": "Clarified local preview instructions in the website README (fixes #223)"
+  },
+  "OpenPrinting/cups-snap#44": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Made the CI sandbox test print the <code>[Job ...]</code> lines of error_log, so the real cause of filter failures shows up (requested by the maintainer in #43)"
   }
 }
