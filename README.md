@@ -185,7 +185,7 @@ Also: ONNX · ROS 2 · currently exploring LLM application development.
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=subham-sahu06&hide_border=true&background=161b22&ring=58A6FF&fire=58A6FF&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=58A6FF&sideLabels=58A6FF&dates=8b949e&stroke=30363d" alt="GitHub contribution streak" />
+  <img src="assets/streak.svg" alt="GitHub contribution streak" />
 </p>
 
 <p align="center">
