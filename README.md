@@ -53,6 +53,11 @@ class SubhamSahu:
 <tr><th>Organization</th><th>Contribution</th><th>Status</th></tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cups-snap/pull/44">cups-snap #44</a>: Made the CI sandbox test print the <code>[Job ...]</code> lines of error_log, so the real cause of filter failures shows up (requested by the maintainer in #43)</td>
+<td><img src="https://img.shields.io/badge/Merged-58A6FF?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/30">legacy-drivers #30</a>: Preserved the Mitsubishi CP50 Ghostscript driver from Ghostscript 9.22, with provenance, license notes and tested build instructions (fixes #26)</td>
 <td><img src="https://img.shields.io/badge/Merged-58A6FF?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
 </tr>
@@ -69,11 +74,6 @@ class SubhamSahu:
 <tr>
 <td><b>OpenPrinting</b></td>
 <td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/31">legacy-drivers #31</a>: Add omni driver (IBM Omni Driver Framework) from Ghostscript 9.20</td>
-<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
-</tr>
-<tr>
-<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/cups-snap/pull/44">cups-snap #44</a>: Made the CI sandbox test print the <code>[Job ...]</code> lines of error_log, so the real cause of filter failures shows up (requested by the maintainer in #43)</td>
 <td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
 </tr>
 </table>
