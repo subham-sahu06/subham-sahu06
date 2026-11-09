@@ -73,6 +73,11 @@ class SubhamSahu:
 </tr>
 <tr>
 <td><b>OpenPrinting</b></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/107">cpdb-libs #107</a>: Fix double free of service_name in cpdbResurrectPrinterFromFile()</td>
+<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b></td>
 <td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/31">legacy-drivers #31</a>: Add omni driver (IBM Omni Driver Framework) from Ghostscript 9.20</td>
 <td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
 </tr>
