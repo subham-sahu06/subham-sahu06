@@ -29,5 +29,15 @@
     "org": "OpenPrinting",
     "sub": "The Linux Foundation",
     "desc": "Made the CI sandbox test print the <code>[Job ...]</code> lines of error_log, so the real cause of filter failures shows up (requested by the maintainer in #43)"
+  },
+  "OpenPrinting/cpdb-libs#107": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Fixed a double free of <code>service_name</code> in <code>cpdbResurrectPrinterFromFile()</code>, found and verified with Valgrind (C)"
+  },
+  "OpenPrinting/legacy-drivers#31": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Preserved the IBM Omni driver from Ghostscript 9.20, with provenance, license notes and build test results on 9.19 and 9.20 (fixes #27)"
   }
 }
