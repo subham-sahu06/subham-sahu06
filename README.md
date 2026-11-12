@@ -81,6 +81,11 @@ class SubhamSahu:
 <td><a href="https://github.com/OpenPrinting/cups-snap/pull/41">cups-snap #41</a>: Fixed truncation of long system queue names by replacing a fixed 32-byte buffer with <code>HTTP_MAX_URI</code> in <code>cups-proxyd</code> (C)</td>
 <td><img src="https://img.shields.io/badge/Merged-58A6FF?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
 </tr>
+<tr>
+<td><b>OpenPrinting</b></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/33">legacy-drivers #33</a>: Add dmprt driver (dot matrix printers) from Ghostscript 9.52</td>
+<td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
+</tr>
 </table>
 <!-- OSS-CONTRIBUTIONS:END -->
 
