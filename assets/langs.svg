@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="170" viewBox="0 0 350 170">
+  <style>
+    .title { opacity: 0; animation: fadein 0.6s ease-in-out forwards; }
+    .bar { animation: grow 1s ease-in-out 0.3s both; }
+    .row { opacity: 0; animation: fadein 0.4s ease-in-out forwards; }
+    @keyframes fadein { to { opacity: 1; } }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  </style>
+  <rect x="0.5" y="0.5" width="349" height="169" rx="4.5" fill="#141321" stroke="#e4e2e2"/>
+  <g font-family='Segoe UI, Ubuntu, sans-serif'>
+    <text class="title" x="25" y="38" fill="#fe428e" font-size="18" font-weight="700">Most Used Languages</text>
+    <clipPath id="round"><rect x="0" y="0" width="300" height="8" rx="4"/></clipPath>
+    <g transform="translate(25,58)"><g class="bar" clip-path="url(#round)"><rect x="0.00" y="0" width="211.31" height="8" fill="#3572A5"/><rect x="211.31" y="0" width="40.97" height="8" fill="#f1e05a"/><rect x="252.28" y="0" width="18.43" height="8" fill="#b07219"/><rect x="270.71" y="0" width="13.63" height="8" fill="#f34b7d"/><rect x="284.35" y="0" width="9.17" height="8" fill="#89e051"/><rect x="293.51" y="0" width="6.49" height="8" fill="#663399"/></g></g>
+    <g class="row" style="animation-delay:0.60s" transform="translate(25,95)">
+      <circle cx="5" cy="-5" r="5" fill="#3572A5"/>
+      <text x="16" y="0" fill="#a9fef7" font-size="12">Python 70.44%</text>
+    </g>
+    <g class="row" style="animation-delay:0.72s" transform="translate(175,95)">
+      <circle cx="5" cy="-5" r="5" fill="#f1e05a"/>
+      <text x="16" y="0" fill="#a9fef7" font-size="12">JavaScript 13.66%</text>
+    </g>
+    <g class="row" style="animation-delay:0.84s" transform="translate(25,120)">
+      <circle cx="5" cy="-5" r="5" fill="#b07219"/>
+      <text x="16" y="0" fill="#a9fef7" font-size="12">Java 6.14%</text>
+    </g>
+    <g class="row" style="animation-delay:0.96s" transform="translate(175,120)">
+      <circle cx="5" cy="-5" r="5" fill="#f34b7d"/>
+      <text x="16" y="0" fill="#a9fef7" font-size="12">C++ 4.54%</text>
+    </g>
+    <g class="row" style="animation-delay:1.08s" transform="translate(25,145)">
+      <circle cx="5" cy="-5" r="5" fill="#89e051"/>
+      <text x="16" y="0" fill="#a9fef7" font-size="12">Shell 3.06%</text>
+    </g>
+    <g class="row" style="animation-delay:1.20s" transform="translate(175,145)">
+      <circle cx="5" cy="-5" r="5" fill="#663399"/>
+      <text x="16" y="0" fill="#a9fef7" font-size="12">CSS 2.16%</text>
+    </g>
+  </g>
+</svg>
