@@ -58,6 +58,11 @@ class SubhamSahu:
 </tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/31">legacy-drivers #31</a>: Preserved the IBM Omni driver from Ghostscript 9.20, with provenance, license notes and build test results on 9.19 and 9.20 (fixes #27)</td>
+<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/cups-snap/pull/44">cups-snap #44</a>: Made the CI sandbox test print the <code>[Job ...]</code> lines of error_log, so the real cause of filter failures shows up (requested by the maintainer in #43)</td>
 <td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
 </tr>
@@ -78,7 +83,7 @@ class SubhamSahu:
 </tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/31">legacy-drivers #31</a>: Preserved the IBM Omni driver from Ghostscript 9.20, with provenance, license notes and build test results on 9.19 and 9.20 (fixes #27)</td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/33">legacy-drivers #33</a>: Preserved the dmprt dot matrix printer driver from Ghostscript 9.52, with provenance, license notes and build test results (fixes #25)</td>
 <td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
 </tr>
 </table>
