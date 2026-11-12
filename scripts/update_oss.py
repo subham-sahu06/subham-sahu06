@@ -24,10 +24,10 @@ OVERRIDES = ROOT / "scripts" / "oss_overrides.json"
 START = "<!-- OSS-CONTRIBUTIONS:START -->"
 END = "<!-- OSS-CONTRIBUTIONS:END -->"
 
-MERGED_BADGE = ('<img src="https://img.shields.io/badge/Merged-58A6FF?style=flat-square'
-                '&logo=github&logoColor=0d1117" alt="Merged" />')
-OPEN_BADGE = ('<img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square'
-              '&logo=github&logoColor=58A6FF" alt="In review" />')
+MERGED_BADGE = ('<img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square'
+                '&logo=github&logoColor=141321" alt="Merged" />')
+OPEN_BADGE = ('<img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square'
+              '&logo=github&logoColor=F8D847" alt="In review" />')
 
 
 def fetch_prs(token):

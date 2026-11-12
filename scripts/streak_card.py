@@ -9,9 +9,9 @@ USER = os.environ.get("STREAK_USER", "subham-sahu06")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUT = os.environ.get("STREAK_OUT", "assets/streak.svg")
 
-# Same colours as the old streak-stats card in the README.
-BG, RING, FIRE = "#161b22", "#58A6FF", "#58A6FF"
-NUM, LABEL, DATES, STROKE = "#e6edf3", "#58A6FF", "#8b949e", "#30363d"
+# "radical" colours, same as the other cards in the README.
+BG, RING, FIRE = "#141321", "#fe428e", "#fe428e"
+NUM, LABEL, DATES, STROKE = "#fe428e", "#a9fef7", "#f8d847", "#e4e2e2"
 
 
 def graphql(query, variables):
@@ -102,23 +102,35 @@ def render(total, first, current, cur_range, longest, today):
     long_text = span(longest[1], longest[2], today)
     font = "font-family='Segoe UI, Ubuntu, sans-serif'"
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195">
-  <rect width="495" height="195" rx="4.5" fill="{BG}"/>
+  <style>
+    .fade {{ opacity: 0; animation: fadein 0.6s ease-in-out forwards; }}
+    .d1 {{ animation-delay: 0.3s; }} .d2 {{ animation-delay: 0.6s; }} .d3 {{ animation-delay: 0.9s; }}
+    .ring {{ stroke-dasharray: 252; stroke-dashoffset: 252; animation: draw 1.2s ease-in-out 0.4s forwards; }}
+    .fire {{ opacity: 0; animation: fadein 0.5s ease-in-out 1.4s forwards; }}
+    @keyframes fadein {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
+    @keyframes draw {{ to {{ stroke-dashoffset: 0; }} }}
+  </style>
+  <rect x="0.5" y="0.5" width="494" height="194" rx="4.5" fill="{BG}" stroke="{STROKE}" stroke-opacity="1"/>
   <line x1="165" y1="28" x2="165" y2="170" stroke="{STROKE}" stroke-width="1"/>
   <line x1="330" y1="28" x2="330" y2="170" stroke="{STROKE}" stroke-width="1"/>
   <g {font} text-anchor="middle">
-    <text x="82.5" y="79" fill="{NUM}" font-size="28" font-weight="700">{total:,}</text>
-    <text x="82.5" y="115" fill="{LABEL}" font-size="14">Total Contributions</text>
-    <text x="82.5" y="145" fill="{DATES}" font-size="12">{total_range}</text>
-
-    <circle cx="247.5" cy="71" r="40" fill="none" stroke="{RING}" stroke-width="5"/>
-    <path d="M247.5 19 c4 6 9 9 9 15 a9 9 0 0 1 -18 0 c0 -4 3 -6 4 -9 c1 3 3 4 4 4 c1 -3 0 -6 1 -10z" fill="{FIRE}" stroke="{BG}" stroke-width="3"/>
-    <text x="247.5" y="80" fill="{NUM}" font-size="28" font-weight="700">{current}</text>
-    <text x="247.5" y="140" fill="{LABEL}" font-size="14" font-weight="700">Current Streak</text>
-    <text x="247.5" y="166" fill="{DATES}" font-size="12">{cur_text}</text>
-
-    <text x="412.5" y="79" fill="{NUM}" font-size="28" font-weight="700">{longest[0]}</text>
-    <text x="412.5" y="115" fill="{LABEL}" font-size="14">Longest Streak</text>
-    <text x="412.5" y="145" fill="{DATES}" font-size="12">{long_text}</text>
+    <g class="fade d1">
+      <text x="82.5" y="79" fill="{NUM}" font-size="28" font-weight="700">{total:,}</text>
+      <text x="82.5" y="115" fill="{LABEL}" font-size="14">Total Contributions</text>
+      <text x="82.5" y="145" fill="{DATES}" font-size="12">{total_range}</text>
+    </g>
+    <circle class="ring" cx="247.5" cy="71" r="40" fill="none" stroke="{RING}" stroke-width="5" transform="rotate(-90 247.5 71)"/>
+    <path class="fire" d="M247.5 19 c4 6 9 9 9 15 a9 9 0 0 1 -18 0 c0 -4 3 -6 4 -9 c1 3 3 4 4 4 c1 -3 0 -6 1 -10z" fill="{FIRE}" stroke="{BG}" stroke-width="3"/>
+    <g class="fade d2">
+      <text x="247.5" y="80" fill="{NUM}" font-size="28" font-weight="700">{current}</text>
+      <text x="247.5" y="140" fill="{LABEL}" font-size="14" font-weight="700">Current Streak</text>
+      <text x="247.5" y="166" fill="{DATES}" font-size="12">{cur_text}</text>
+    </g>
+    <g class="fade d3">
+      <text x="412.5" y="79" fill="{NUM}" font-size="28" font-weight="700">{longest[0]}</text>
+      <text x="412.5" y="115" fill="{LABEL}" font-size="14">Longest Streak</text>
+      <text x="412.5" y="145" fill="{DATES}" font-size="12">{long_text}</text>
+    </g>
   </g>
 </svg>
 """
