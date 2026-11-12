@@ -178,7 +178,7 @@ A Python project that applies **AI to trading workflows** to help manage and ana
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subham-sahu06&layout=compact&theme=radical&border_color=e4e2e2" alt="Most used languages" />
+  <img src="assets/langs.svg" alt="Most used languages" />
 </p>
 
 ## 📈 Contribution Activity
@@ -195,7 +195,7 @@ A Python project that applies **AI to trading workflows** to help manage and ana
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=subham-sahu06&show_icons=true&theme=radical&include_all_commits=true&count_private=true&border_color=e4e2e2" alt="GitHub stats" height="170" />
+  <img src="assets/stats.svg" alt="GitHub stats" height="170" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=subham-sahu06&theme=radical&utcOffset=5.5" alt="Productive time" height="170" />
 </p>
 
