@@ -82,8 +82,8 @@ class SubhamSahu:
 <td><img src="https://img.shields.io/badge/Merged-58A6FF?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
 </tr>
 <tr>
-<td><b>OpenPrinting</b></td>
-<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/33">legacy-drivers #33</a>: Add dmprt driver (dot matrix printers) from Ghostscript 9.52</td>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/33">legacy-drivers #33</a>: Preserved the dmprt dot matrix printer driver from Ghostscript 9.52, with provenance, license notes and build test results (fixes #25)</td>
 <td><img src="https://img.shields.io/badge/In%20Review-161b22?style=flat-square&logo=github&logoColor=58A6FF" alt="In review" /></td>
 </tr>
 </table>
