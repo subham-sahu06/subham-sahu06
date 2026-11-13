@@ -44,5 +44,10 @@
     "org": "OpenPrinting",
     "sub": "The Linux Foundation",
     "desc": "Preserved the dmprt dot matrix printer driver from Ghostscript 9.52, with provenance, license notes and build test results (fixes #25)"
+  },
+  "OpenPrinting/legacy-drivers#34": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Preserved four drivers found in foomatic-db (lbp660, c2070, ml85p, lpstyl), recovered from the Wayback Machine, with provenance, license notes and build test results"
   }
 }
