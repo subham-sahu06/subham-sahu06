@@ -12,21 +12,21 @@
   <line x1="330" y1="28" x2="330" y2="170" stroke="#e4e2e2" stroke-width="1"/>
   <g font-family='Segoe UI, Ubuntu, sans-serif' text-anchor="middle">
     <g class="fade d1">
-      <text x="82.5" y="79" fill="#fe428e" font-size="28" font-weight="700">148</text>
+      <text x="82.5" y="79" fill="#fe428e" font-size="28" font-weight="700">149</text>
       <text x="82.5" y="115" fill="#a9fef7" font-size="14">Total Contributions</text>
       <text x="82.5" y="145" fill="#f8d847" font-size="12">Feb 16, 2025 - Present</text>
     </g>
     <circle class="ring" cx="247.5" cy="71" r="40" fill="none" stroke="#fe428e" stroke-width="5" transform="rotate(-90 247.5 71)"/>
     <path class="fire" d="M247.5 19 c4 6 9 9 9 15 a9 9 0 0 1 -18 0 c0 -4 3 -6 4 -9 c1 3 3 4 4 4 c1 -3 0 -6 1 -10z" fill="#fe428e" stroke="#141321" stroke-width="3"/>
     <g class="fade d2">
-      <text x="247.5" y="80" fill="#fe428e" font-size="28" font-weight="700">18</text>
+      <text x="247.5" y="80" fill="#fe428e" font-size="28" font-weight="700">19</text>
       <text x="247.5" y="140" fill="#a9fef7" font-size="14" font-weight="700">Current Streak</text>
-      <text x="247.5" y="166" fill="#f8d847" font-size="12">Oct 27 - Nov 13</text>
+      <text x="247.5" y="166" fill="#f8d847" font-size="12">Oct 27 - Nov 14</text>
     </g>
     <g class="fade d3">
-      <text x="412.5" y="79" fill="#fe428e" font-size="28" font-weight="700">18</text>
+      <text x="412.5" y="79" fill="#fe428e" font-size="28" font-weight="700">19</text>
       <text x="412.5" y="115" fill="#a9fef7" font-size="14">Longest Streak</text>
-      <text x="412.5" y="145" fill="#f8d847" font-size="12">Oct 27 - Nov 13</text>
+      <text x="412.5" y="145" fill="#f8d847" font-size="12">Oct 27 - Nov 14</text>
     </g>
   </g>
 </svg>
