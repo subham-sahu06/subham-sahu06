@@ -91,6 +91,21 @@ class SubhamSahu:
 <td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/34">legacy-drivers #34</a>: Preserved four drivers found in foomatic-db (lbp660, c2070, ml85p, lpstyl), recovered from the Wayback Machine, with provenance, license notes and build test results</td>
 <td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
 </tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/109">cpdb-libs #109</a>: Fixed the cppcheck CI failure (<code>nullPointerOutOfMemory</code>) by checking the <code>malloc()</code> result in <code>cpdbUnpackStringArray()</code> (C)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/108">cpdb-libs #108</a>: Jobs printed with <code>cpdbPrintFile()</code> showed up as "untitled document"; now the file name is used as the job title (C)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/issues/94">cpdb-libs #94</a>: Reproduced the printer pickle bug (a pickled printer prints only once) and traced it to the backend's <code>replace</code> handling, with proposed fixes</td>
+<td><img src="https://img.shields.io/badge/Investigating-141321?style=flat-square&logo=github&logoColor=F8D847" alt="Investigating" /></td>
+</tr>
 </table>
 <!-- OSS-CONTRIBUTIONS:END -->
 
