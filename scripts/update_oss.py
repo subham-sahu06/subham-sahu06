@@ -26,6 +26,12 @@ END = "<!-- OSS-CONTRIBUTIONS:END -->"
 
 MERGED_BADGE = ('<img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square'
                 '&logo=github&logoColor=141321" alt="Merged" />')
+# Shown under the organization name for every PR from that organization,
+# unless oss_overrides.json says otherwise.
+ORG_SUBS = {
+    "openprinting": "The Linux Foundation",
+}
+
 OPEN_BADGE = ('<img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square'
               '&logo=github&logoColor=F8D847" alt="In review" />')
 
@@ -67,7 +73,7 @@ def to_rows(items, overrides):
             "merged": merged,
             "created": it["created_at"],
             "org": ov.get("org", owner),
-            "sub": ov.get("sub", ""),
+            "sub": ov.get("sub", ORG_SUBS.get(owner.lower(), "")),
             "link_text": f"{name} #{number}",
             "url": it["html_url"],
             "desc": ov.get("desc", html.escape(it["title"])),

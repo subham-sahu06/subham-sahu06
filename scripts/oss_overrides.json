@@ -49,5 +49,20 @@
     "org": "OpenPrinting",
     "sub": "The Linux Foundation",
     "desc": "Preserved four drivers found in foomatic-db (lbp660, c2070, ml85p, lpstyl), recovered from the Wayback Machine, with provenance, license notes and build test results"
+  },
+  "OpenPrinting/cpdb-libs#108": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Jobs printed with <code>cpdbPrintFile()</code> showed up as \"untitled document\"; now the file name is used as the job title (C)"
+  },
+  "OpenPrinting/cpdb-libs#109": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Fixed the cppcheck CI failure (<code>nullPointerOutOfMemory</code>) that broke every new PR, by checking the <code>malloc()</code> result in <code>cpdbUnpackStringArray()</code> (C)"
+  },
+  "OpenPrinting/cpdb-libs#110": {
+    "org": "OpenPrinting",
+    "sub": "The Linux Foundation",
+    "desc": "Fixed printer pickles working only once: reproduced the bug, traced it to the backend's <code>replace</code> handling, and made <code>cpdbResurrectPrinterFromFile()</code> re-register with the backend, so pickles survive backend restarts (C, fixes #94)"
   }
 }
