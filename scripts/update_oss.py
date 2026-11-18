@@ -77,10 +77,14 @@ def to_rows(items, overrides):
             "link_text": f"{name} #{number}",
             "url": it["html_url"],
             "desc": ov.get("desc", html.escape(it["title"])),
+            "rank": ov.get("rank"),
         })
-    # merged first, then newest first inside each group
+    # PRs with a "rank" in oss_overrides.json come first, in rank order
+    # (1 = strongest), whether merged or not. The rest follow: merged
+    # first, then newest first inside each group.
     rows.sort(key=lambda r: r["created"], reverse=True)
     rows.sort(key=lambda r: not r["merged"])
+    rows.sort(key=lambda r: (r["rank"] is None, r["rank"] or 0))
     return rows
 
 
