@@ -52,13 +52,13 @@ class SubhamSahu:
 <table>
 <tr><th>Organization</th><th>Contribution</th><th>Status</th></tr>
 <tr>
-<td><b>OpenPrinting</b></td>
-<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/109">cpdb-libs #109</a>: Check malloc() result in cpdbUnpackStringArray()</td>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/109">cpdb-libs #109</a>: Fixed the cppcheck CI failure (<code>nullPointerOutOfMemory</code>) that broke every new PR, by checking the <code>malloc()</code> result in <code>cpdbUnpackStringArray()</code> (C)</td>
 <td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
 </tr>
 <tr>
-<td><b>OpenPrinting</b></td>
-<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/108">cpdb-libs #108</a>: Use the file name as job title in cpdbPrintFile()</td>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/108">cpdb-libs #108</a>: Jobs printed with <code>cpdbPrintFile()</code> showed up as "untitled document"; now the file name is used as the job title (C)</td>
 <td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
 </tr>
 <tr>
@@ -95,6 +95,11 @@ class SubhamSahu:
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/cups-snap/pull/41">cups-snap #41</a>: Fixed truncation of long system queue names by replacing a fixed 32-byte buffer with <code>HTTP_MAX_URI</code> in <code>cups-proxyd</code> (C)</td>
 <td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/110">cpdb-libs #110</a>: Fixed printer pickles working only once: reproduced the bug, traced it to the backend's <code>replace</code> handling, and made <code>cpdbResurrectPrinterFromFile()</code> re-register with the backend, so pickles survive backend restarts (C, fixes #94)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
 </tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
