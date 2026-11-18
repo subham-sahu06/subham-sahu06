@@ -54,7 +54,7 @@ class SubhamSahu:
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/110">cpdb-libs #110</a>: Fixed printer pickles working only once: reproduced the bug, traced it to the backend's <code>replace</code> handling, and made <code>cpdbResurrectPrinterFromFile()</code> re-register with the backend, so pickles survive backend restarts (C, fixes #94)</td>
-<td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
+<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
 </tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
