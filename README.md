@@ -53,37 +53,12 @@ class SubhamSahu:
 <tr><th>Organization</th><th>Contribution</th><th>Status</th></tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/109">cpdb-libs #109</a>: Fixed the cppcheck CI failure (<code>nullPointerOutOfMemory</code>) that broke every new PR, by checking the <code>malloc()</code> result in <code>cpdbUnpackStringArray()</code> (C)</td>
-<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
-</tr>
-<tr>
-<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/108">cpdb-libs #108</a>: Jobs printed with <code>cpdbPrintFile()</code> showed up as "untitled document"; now the file name is used as the job title (C)</td>
-<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
-</tr>
-<tr>
-<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/33">legacy-drivers #33</a>: Preserved the dmprt dot matrix printer driver from Ghostscript 9.52, with provenance, license notes and build test results (fixes #25)</td>
-<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/110">cpdb-libs #110</a>: Fixed printer pickles working only once: reproduced the bug, traced it to the backend's <code>replace</code> handling, and made <code>cpdbResurrectPrinterFromFile()</code> re-register with the backend, so pickles survive backend restarts (C, fixes #94)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
 </tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/107">cpdb-libs #107</a>: Fixed a double free of <code>service_name</code> in <code>cpdbResurrectPrinterFromFile()</code>, found and verified with Valgrind (C)</td>
-<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
-</tr>
-<tr>
-<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/31">legacy-drivers #31</a>: Preserved the IBM Omni driver from Ghostscript 9.20, with provenance, license notes and build test results on 9.19 and 9.20 (fixes #27)</td>
-<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
-</tr>
-<tr>
-<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/cups-snap/pull/44">cups-snap #44</a>: Made the CI sandbox test print the <code>[Job ...]</code> lines of error_log, so the real cause of filter failures shows up (requested by the maintainer in #43)</td>
-<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
-</tr>
-<tr>
-<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/30">legacy-drivers #30</a>: Preserved the Mitsubishi CP50 Ghostscript driver from Ghostscript 9.22, with provenance, license notes and tested build instructions (fixes #26)</td>
 <td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
 </tr>
 <tr>
@@ -98,13 +73,38 @@ class SubhamSahu:
 </tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
-<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/110">cpdb-libs #110</a>: Fixed printer pickles working only once: reproduced the bug, traced it to the backend's <code>replace</code> handling, and made <code>cpdbResurrectPrinterFromFile()</code> re-register with the backend, so pickles survive backend restarts (C, fixes #94)</td>
-<td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/108">cpdb-libs #108</a>: Jobs printed with <code>cpdbPrintFile()</code> showed up as "untitled document"; now the file name is used as the job title (C)</td>
+<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
 </tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/34">legacy-drivers #34</a>: Preserved four drivers found in foomatic-db (lbp660, c2070, ml85p, lpstyl), recovered from the Wayback Machine, with provenance, license notes and build test results</td>
 <td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/31">legacy-drivers #31</a>: Preserved the IBM Omni driver from Ghostscript 9.20, with provenance, license notes and build test results on 9.19 and 9.20 (fixes #27)</td>
+<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/33">legacy-drivers #33</a>: Preserved the dmprt dot matrix printer driver from Ghostscript 9.52, with provenance, license notes and build test results (fixes #25)</td>
+<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/30">legacy-drivers #30</a>: Preserved the Mitsubishi CP50 Ghostscript driver from Ghostscript 9.22, with provenance, license notes and tested build instructions (fixes #26)</td>
+<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cups-snap/pull/44">cups-snap #44</a>: Made the CI sandbox test print the <code>[Job ...]</code> lines of error_log, so the real cause of filter failures shows up (requested by the maintainer in #43)</td>
+<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/109">cpdb-libs #109</a>: Fixed the cppcheck CI failure (<code>nullPointerOutOfMemory</code>) that broke every new PR, by checking the <code>malloc()</code> result in <code>cpdbUnpackStringArray()</code> (C)</td>
+<td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
 </tr>
 </table>
 <!-- OSS-CONTRIBUTIONS:END -->
