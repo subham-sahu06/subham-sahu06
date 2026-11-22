@@ -106,6 +106,16 @@ class SubhamSahu:
 <td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/109">cpdb-libs #109</a>: Fixed the cppcheck CI failure (<code>nullPointerOutOfMemory</code>) that broke every new PR, by checking the <code>malloc()</code> result in <code>cpdbUnpackStringArray()</code> (C)</td>
 <td><img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square&logo=github&logoColor=141321" alt="Merged" /></td>
 </tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/38">legacy-drivers #38</a>: Add pentaxpj and pocketjet drivers for the Pentax PocketJet from the OpenPrinting download space</td>
+<td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/37">legacy-drivers #37</a>: Add dplix driver for the Dell 3010cn from the OpenPrinting download space</td>
+<td><img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square&logo=github&logoColor=F8D847" alt="In review" /></td>
+</tr>
 </table>
 <!-- OSS-CONTRIBUTIONS:END -->
 
