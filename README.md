@@ -234,7 +234,7 @@ A Python project that applies **AI to trading workflows** to help manage and ana
 </p>
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/fe428e/subham-sahu06" alt="Contribution graph" width="100%" />
+  <img src="assets/arcade.svg" alt="Contributions in the last year as an arcade game" width="100%" />
 </p>
 
 <p align="center">
