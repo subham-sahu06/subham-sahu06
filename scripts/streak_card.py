@@ -10,8 +10,8 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUT = os.environ.get("STREAK_OUT", "assets/streak.svg")
 
 # "radical" colours, same as the other cards in the README.
-BG, RING, FIRE = "#141321", "#fe428e", "#fe428e"
-NUM, LABEL, DATES, STROKE = "#fe428e", "#a9fef7", "#f8d847", "#e4e2e2"
+BG, RING, FIRE = "#0d1117", "#39d353", "#39d353"
+NUM, LABEL, DATES, STROKE = "#39d353", "#7ee787", "#26a641", "#30363d"
 
 
 def graphql(query, variables):

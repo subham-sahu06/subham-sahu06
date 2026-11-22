@@ -11,7 +11,7 @@ NAME = os.environ.get("STATS_NAME", "Subham Sahu")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUT_DIR = os.environ.get("STATS_OUT", "assets")
 
-BG, BORDER, TITLE, TEXT, ICON = "#141321", "#e4e2e2", "#fe428e", "#a9fef7", "#f8d847"
+BG, BORDER, TITLE, TEXT, ICON = "#0d1117", "#30363d", "#39d353", "#7ee787", "#26a641"
 FONT = "font-family='Segoe UI, Ubuntu, sans-serif'"
 
 GITHUB_MARK = ("M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49"

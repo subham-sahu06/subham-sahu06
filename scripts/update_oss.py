@@ -24,16 +24,16 @@ OVERRIDES = ROOT / "scripts" / "oss_overrides.json"
 START = "<!-- OSS-CONTRIBUTIONS:START -->"
 END = "<!-- OSS-CONTRIBUTIONS:END -->"
 
-MERGED_BADGE = ('<img src="https://img.shields.io/badge/Merged-FE428E?style=flat-square'
-                '&logo=github&logoColor=141321" alt="Merged" />')
+MERGED_BADGE = ('<img src="https://img.shields.io/badge/Merged-39D353?style=flat-square'
+                '&logo=github&logoColor=0d1117" alt="Merged" />')
 # Shown under the organization name for every PR from that organization,
 # unless oss_overrides.json says otherwise.
 ORG_SUBS = {
     "openprinting": "The Linux Foundation",
 }
 
-OPEN_BADGE = ('<img src="https://img.shields.io/badge/In%20Review-141321?style=flat-square'
-              '&logo=github&logoColor=F8D847" alt="In review" />')
+OPEN_BADGE = ('<img src="https://img.shields.io/badge/In%20Review-0d1117?style=flat-square'
+              '&logo=github&logoColor=26A641" alt="In review" />')
 
 
 def fetch_prs(token):

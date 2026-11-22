@@ -10,8 +10,8 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUT = os.environ.get("ARCADE_OUT", "assets/arcade.svg")
 DATA = os.environ.get("ARCADE_DATA", "")
 
-BG, FRAME, PINK, CYAN, YELLOW, DIM = "#141321", "#fe428e", "#fe428e", "#a9fef7", "#f8d847", "#2a2340"
-LEVELS = ["#241d33", "#5c1f45", "#9a2a63", "#d63a7f", "#ff5fa2"]
+BG, FRAME, PINK, CYAN, YELLOW, DIM = "#0d1117", "#39d353", "#39d353", "#7ee787", "#26a641", "#21262d"
+LEVELS = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 
 
 def fetch():
@@ -111,10 +111,10 @@ def build(cal):
     for i, w in enumerate(weeks):
         first = date.fromisoformat(w["contributionDays"][0]["date"])
         if first.month != last_month and first.day <= 7:
-            a(f'<text class="t" x="{gx + i*step}" y="{gy-8}" font-size="8" fill="#8b86a3">{first.strftime("%b").upper()}</text>')
+            a(f'<text class="t" x="{gx + i*step}" y="{gy-8}" font-size="8" fill="#8b949e">{first.strftime("%b").upper()}</text>')
             last_month = first.month
     for r, name in ((1, "MON"), (3, "WED"), (5, "FRI")):
-        a(f'<text class="t" x="{gx-34}" y="{gy + r*step + 9}" font-size="8" fill="#8b86a3">{name}</text>')
+        a(f'<text class="t" x="{gx-34}" y="{gy + r*step + 9}" font-size="8" fill="#8b949e">{name}</text>')
 
     for i, w in enumerate(weeks):
         for d in w["contributionDays"]:
@@ -132,11 +132,11 @@ def build(cal):
     a("</g></g>")
 
     fy = height - 18
-    a(f'<text class="t" x="24" y="{fy}" font-size="8" fill="#8b86a3">POWER: LOW</text>')
+    a(f'<text class="t" x="24" y="{fy}" font-size="8" fill="#8b949e">POWER: LOW</text>')
     for i, c in enumerate(LEVELS):
         a(f'<rect x="{82 + i*13}" y="{fy-8}" width="10" height="10" rx="2" fill="{c}"/>')
-    a(f'<text class="t" x="{82 + 5*13 + 4}" y="{fy}" font-size="8" fill="#8b86a3">OVERDRIVE</text>')
-    a(f'<text class="t" x="{width-24}" y="{fy}" font-size="8" fill="#8b86a3" text-anchor="end">BEST DAY: {best} · SECTOR: {esc(USER.upper())}</text>')
+    a(f'<text class="t" x="{82 + 5*13 + 4}" y="{fy}" font-size="8" fill="#8b949e">OVERDRIVE</text>')
+    a(f'<text class="t" x="{width-24}" y="{fy}" font-size="8" fill="#8b949e" text-anchor="end">BEST DAY: {best} · SECTOR: {esc(USER.upper())}</text>')
     a("</svg>")
     return "\n".join(out)
 
