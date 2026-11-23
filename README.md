@@ -53,6 +53,16 @@ class SubhamSahu:
 <tr><th>Organization</th><th>Contribution</th><th>Status</th></tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/cups/pull/1829">cups #1829</a>: Fixed <code>_ppdCreateFromIPP()</code> for printers that report media sizes without a PPD name (e.g. <code>jpn_chou2</code>): a crash on 2.4.x and empty PageSize names on master. Reviewed by CUPS lead Michael Sweet (C, fixes #1828)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-0d1117?style=flat-square&logo=github&logoColor=26A641" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
+<td><a href="https://github.com/OpenPrinting/legacy-drivers/pull/39">legacy-drivers #39</a>: Preserved the <code>xes</code>, <code>oki4w</code> and <code>ln03</code> Ghostscript contrib drivers (8 devices) from Ghostscript 10.07.1, with provenance, Foomatic PPD sources and build test results (Priority 1, first batch of #35)</td>
+<td><img src="https://img.shields.io/badge/In%20Review-0d1117?style=flat-square&logo=github&logoColor=26A641" alt="In review" /></td>
+</tr>
+<tr>
+<td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/cpdb-libs/pull/110">cpdb-libs #110</a>: Fixed printer pickles working only once: reproduced the bug, traced it to the backend's <code>replace</code> handling, and made <code>cpdbResurrectPrinterFromFile()</code> re-register with the backend, so pickles survive backend restarts (C, fixes #94)</td>
 <td><img src="https://img.shields.io/badge/Merged-39D353?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
 </tr>
