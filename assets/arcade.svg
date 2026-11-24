@@ -2,10 +2,7 @@
 <style>
 .t{font-family:'Courier New',Consolas,monospace;font-weight:700}
 @keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}.s{animation:tw 3s ease-in-out infinite}
-@keyframes fly{0%{transform:translateX(0)}50%{transform:translateX(722px)}100%{transform:translateX(0)}}
-.ship{animation:fly 14s ease-in-out infinite}
-@keyframes shot{0%{transform:translateY(0);opacity:1}80%{opacity:1}100%{transform:translateY(-120px);opacity:0}}
-.laser{animation:shot 1.4s linear infinite}
+@keyframes hop{0.00%{transform:translateX(747.5px)}8.75%{transform:translateX(551.5px)}25.00%{transform:translateX(551.5px)}33.75%{transform:translateX(607.5px)}50.00%{transform:translateX(607.5px)}58.75%{transform:translateX(663.5px)}75.00%{transform:translateX(663.5px)}83.75%{transform:translateX(747.5px)}100%{transform:translateX(747.5px)}}.ship{animation:hop 8.8s ease-in-out infinite}@keyframes zap{0%,9.50%{opacity:0}10.50%,20.00%{opacity:1}21.50%,100%{opacity:0}}.zap{opacity:0;animation:zap 8.8s linear infinite}@keyframes lock{0%,7.50%{opacity:0;transform:scale(1.8)}10.00%{opacity:1;transform:scale(1)}21.50%{opacity:1}23.00%,100%{opacity:0}}.lock{opacity:0;transform-box:fill-box;transform-origin:center;animation:lock 8.8s ease-out infinite}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:.2}}.b{animation:blink 1.2s step-end infinite}
 @keyframes scan{0%{transform:translateY(0)}100%{transform:translateY(210px)}}.scan{animation:scan 4s linear infinite}
 </style>
@@ -21,7 +18,7 @@
 <circle class="s" cx="430" cy="206" r="1.2" fill="#7ee787" style="animation-delay:2.8s"/>
 <circle class="s" cx="790" cy="210" r="1.2" fill="#7ee787" style="animation-delay:3.2s"/>
 <circle class="s" cx="812" cy="205" r="1.2" fill="#7ee787" style="animation-delay:3.6s"/>
-<text class="t" x="24" y="34" font-size="11" fill="#26a641">SCORE: 195</text>
+<text class="t" x="24" y="34" font-size="11" fill="#26a641">SCORE: 196</text>
 <text class="t" x="256" y="34" font-size="11" fill="#7ee787">RANK: LVL 8 · OPEN SOURCE PILOT</text>
 <text class="t" x="545" y="34" font-size="11" fill="#39d353">COMBO: x29 DAYS</text>
 <text class="t" x="702" y="34" font-size="11" fill="#7ee787">SHIELDS: 97%</text>
@@ -417,13 +414,9 @@
 <rect x="784" y="156" width="11" height="11" rx="2" fill="#0e4429"><title>2026-11-21: 3</title></rect>
 <rect x="798" y="72" width="11" height="11" rx="2" fill="#006d32"><title>2026-11-22: 6</title></rect>
 <rect x="798" y="86" width="11" height="11" rx="2" fill="#006d32"><title>2026-11-23: 6</title></rect>
-<rect x="798" y="100" width="11" height="11" rx="2" fill="#006d32"><title>2026-11-24: 5</title></rect>
+<rect x="798" y="100" width="11" height="11" rx="2" fill="#006d32"><title>2026-11-24: 6</title></rect>
 <rect class="scan" x="12" y="20" width="828" height="2" fill="#7ee787" opacity=".07"/>
-<g class="ship" transform="translate(0,0)"><g transform="translate(76,204) scale(1.5)">
-<rect class="laser" x="-1" y="-22" width="2" height="10" fill="#26a641"/>
-<path d="M0,-12 L7,6 L0,2 L-7,6 Z" fill="#39d353"/>
-<path d="M-3,6 L0,12 L3,6 Z" fill="#26a641" class="b"/>
-</g></g>
+<g class="zap" style="animation-delay:0.0s"><line x1="551.5" y1="184" x2="551.5" y2="97.5" stroke="#7ee787" stroke-width="2.5" opacity=".9"/><line x1="551.5" y1="184" x2="551.5" y2="97.5" stroke="#ffffff" stroke-width="1" opacity=".9"/><rect x="544.0" y="84.0" width="15" height="15" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g><circle class="lock" style="animation-delay:0.0s" cx="551.5" cy="91.5" r="11" fill="none" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="4 3"/><g class="zap" style="animation-delay:2.2s"><line x1="607.5" y1="184" x2="607.5" y2="167.5" stroke="#7ee787" stroke-width="2.5" opacity=".9"/><line x1="607.5" y1="184" x2="607.5" y2="167.5" stroke="#ffffff" stroke-width="1" opacity=".9"/><rect x="600.0" y="154.0" width="15" height="15" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g><circle class="lock" style="animation-delay:2.2s" cx="607.5" cy="161.5" r="11" fill="none" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="4 3"/><g class="zap" style="animation-delay:4.4s"><line x1="663.5" y1="184" x2="663.5" y2="153.5" stroke="#7ee787" stroke-width="2.5" opacity=".9"/><line x1="663.5" y1="184" x2="663.5" y2="153.5" stroke="#ffffff" stroke-width="1" opacity=".9"/><rect x="656.0" y="140.0" width="15" height="15" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g><circle class="lock" style="animation-delay:4.4s" cx="663.5" cy="147.5" r="11" fill="none" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="4 3"/><g class="zap" style="animation-delay:6.6s"><line x1="747.5" y1="184" x2="747.5" y2="111.5" stroke="#7ee787" stroke-width="2.5" opacity=".9"/><line x1="747.5" y1="184" x2="747.5" y2="111.5" stroke="#ffffff" stroke-width="1" opacity=".9"/><rect x="740.0" y="98.0" width="15" height="15" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g><circle class="lock" style="animation-delay:6.6s" cx="747.5" cy="105.5" r="11" fill="none" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="4 3"/><g class="ship"><g transform="translate(0,200) scale(1.5)"><circle cx="0" cy="-4" r="9" fill="none" stroke="#7ee787" stroke-width=".7" opacity=".5"/><path d="M0,-12 L7,6 L0,2 L-7,6 Z" fill="#39d353"/><path d="M-3,6 L0,12 L3,6 Z" fill="#26a641" class="b"/></g></g>
 <text class="t" x="24" y="232" font-size="8" fill="#8b949e">POWER: LOW</text>
 <rect x="82" y="224" width="10" height="10" rx="2" fill="#161b22"/>
 <rect x="95" y="224" width="10" height="10" rx="2" fill="#0e4429"/>
