@@ -83,10 +83,7 @@ def build(cal):
     a("<style>")
     a(".t{font-family:'Courier New',Consolas,monospace;font-weight:700}")
     a("@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}.s{animation:tw 3s ease-in-out infinite}")
-    a("@keyframes fly{0%{transform:translateX(0)}50%{transform:translateX(" + str(gridw - 20) + "px)}100%{transform:translateX(0)}}")
-    a(".ship{animation:fly 14s ease-in-out infinite}")
-    a("@keyframes shot{0%{transform:translateY(0);opacity:1}80%{opacity:1}100%{transform:translateY(-120px);opacity:0}}")
-    a(".laser{animation:shot 1.4s linear infinite}")
+    a("__SHIPCSS__")
     a("@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:.2}}.b{animation:blink 1.2s step-end infinite}")
     a("@keyframes scan{0%{transform:translateY(0)}100%{transform:translateY(" + str(height - 40) + "px)}}.scan{animation:scan 4s linear infinite}")
     a("</style>")
@@ -124,12 +121,7 @@ def build(cal):
 
     a(f'<rect class="scan" x="12" y="20" width="{width-24}" height="2" fill="{CYAN}" opacity=".07"/>')
 
-    sy = gy + 7 * step + 34
-    a(f'<g class="ship" transform="translate(0,0)"><g transform="translate({gx+6},{sy}) scale(1.5)">')
-    a(f'<rect class="laser" x="-1" y="-22" width="2" height="10" fill="{YELLOW}"/>')
-    a(f'<path d="M0,-12 L7,6 L0,2 L-7,6 Z" fill="{PINK}"/>')
-    a(f'<path d="M-3,6 L0,12 L3,6 Z" fill="{YELLOW}" class="b"/>')
-    a("</g></g>")
+    a("__SHIP__")
 
     fy = height - 18
     a(f'<text class="t" x="24" y="{fy}" font-size="8" fill="#8b949e">POWER: LOW</text>')
@@ -138,7 +130,66 @@ def build(cal):
     a(f'<text class="t" x="{82 + 5*13 + 4}" y="{fy}" font-size="8" fill="#8b949e">OVERDRIVE</text>')
     a(f'<text class="t" x="{width-24}" y="{fy}" font-size="8" fill="#8b949e" text-anchor="end">BEST DAY: {best} · SECTOR: {esc(USER.upper())}</text>')
     a("</svg>")
-    return "\n".join(out)
+    sy = gy + 7 * step + 30
+    css, ship = ship_layer(weeks, gx, gy, cell, step, sy)
+    svg = "\n".join(out)
+    return svg.replace("__SHIPCSS__", css).replace("__SHIP__", ship)
+
+
+def pick_targets(weeks, n=8):
+    cols = []
+    for i, w in enumerate(weeks):
+        for d in w["contributionDays"]:
+            if d["contributionCount"] > 0:
+                r = date.fromisoformat(d["date"]).isoweekday() % 7
+                cols.append((i, r, d["contributionCount"]))
+    if not cols:
+        return []
+    band = max(1, len(weeks) // n)
+    picks = []
+    for b in range(0, len(weeks), band):
+        inband = [c for c in cols if b <= c[0] < b + band]
+        if inband:
+            picks.append(max(inband, key=lambda c: (c[2], -c[1])))
+    return sorted(picks)[:n]
+
+
+def ship_layer(weeks, gx, gy, cell, step, sy):
+    targets = pick_targets(weeks)
+    if not targets:
+        return "", ""
+    n = len(targets)
+    seg = 2.2
+    period = n * seg
+    xs = [gx + i * step + cell / 2 for i, _, _ in targets]
+    frames = []
+    for k, x in enumerate(xs):
+        start = k / n * 100
+        arrive = (k + 0.35) / n * 100
+        frames.append(f"{start:.2f}%{{transform:translateX({xs[k-1] if k else xs[-1]:.1f}px)}}")
+        frames.append(f"{arrive:.2f}%{{transform:translateX({x:.1f}px)}}")
+    frames.append(f"100%{{transform:translateX({xs[-1]:.1f}px)}}")
+    w = 100 / n
+    css = ("@keyframes hop{" + "".join(frames) + "}"
+           f".ship{{animation:hop {period:.1f}s ease-in-out infinite}}"
+           f"@keyframes zap{{0%,{w*0.38:.2f}%{{opacity:0}}{w*0.42:.2f}%,{w*0.80:.2f}%{{opacity:1}}{w*0.86:.2f}%,100%{{opacity:0}}}}"
+           f".zap{{opacity:0;animation:zap {period:.1f}s linear infinite}}"
+           f"@keyframes lock{{0%,{w*0.30:.2f}%{{opacity:0;transform:scale(1.8)}}{w*0.40:.2f}%{{opacity:1;transform:scale(1)}}{w*0.86:.2f}%{{opacity:1}}{w*0.92:.2f}%,100%{{opacity:0}}}}"
+           f".lock{{opacity:0;transform-box:fill-box;transform-origin:center;animation:lock {period:.1f}s ease-out infinite}}")
+    g = []
+    for k, (i, r, _) in enumerate(targets):
+        cx, cy = gx + i * step + cell / 2, gy + r * step + cell / 2
+        delay = f"animation-delay:{k*seg:.1f}s"
+        g.append(f'<g class="zap" style="{delay}">'
+                 f'<line x1="{cx:.1f}" y1="{sy-16}" x2="{cx:.1f}" y2="{cy+6:.1f}" stroke="{CYAN}" stroke-width="2.5" opacity=".9"/>'
+                 f'<line x1="{cx:.1f}" y1="{sy-16}" x2="{cx:.1f}" y2="{cy+6:.1f}" stroke="#ffffff" stroke-width="1" opacity=".9"/>'
+                 f'<rect x="{cx-cell/2-2:.1f}" y="{cy-cell/2-2:.1f}" width="{cell+4}" height="{cell+4}" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g>')
+        g.append(f'<circle class="lock" style="{delay}" cx="{cx:.1f}" cy="{cy:.1f}" r="11" fill="none" stroke="{CYAN}" stroke-width="1.2" stroke-dasharray="4 3"/>')
+    g.append(f'<g class="ship"><g transform="translate(0,{sy}) scale(1.5)">'
+             f'<circle cx="0" cy="-4" r="9" fill="none" stroke="{CYAN}" stroke-width=".7" opacity=".5"/>'
+             f'<path d="M0,-12 L7,6 L0,2 L-7,6 Z" fill="{PINK}"/>'
+             f'<path d="M-3,6 L0,12 L3,6 Z" fill="{YELLOW}" class="b"/></g></g>')
+    return css, "".join(g)
 
 
 if __name__ == "__main__":
