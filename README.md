@@ -128,7 +128,7 @@ class SubhamSahu:
 </tr>
 <tr>
 <td><b>AuralisOS</b><br/><sub>Alpine-based Linux OS</sub></td>
-<td><a href="https://github.com/Swatikantamishra8/AuralisOS/pull/6">AuralisOS #6</a>: Tested the VM ISO in QEMU/KVM and fixed 8 issues in separate commits: zram swap was never created (<code>150%: bad number</code>), <code>binfmt_misc</code> was not mounted so .exe and .dmg files never reached the router, iwd did not start, the router prompt defaulted to Yes, VirtualBox detection matched every machine, and two boot errors (Shell, Go)</td>
+<td><a href="https://github.com/Swatikantamishra8/AuralisOS/pull/7">AuralisOS #7</a>: Tested the VM ISO in QEMU/KVM and fixed 8 issues in separate commits: zram swap was never created (<code>150%: bad number</code>), <code>binfmt_misc</code> was not mounted so .exe and .dmg files never reached the router, iwd did not start, the router prompt defaulted to Yes, VirtualBox detection matched every machine, and two boot errors (Shell, Go)</td>
 <td><img src="https://img.shields.io/badge/In%20Review-0d1117?style=flat-square&logo=github&logoColor=26A641" alt="In review" /></td>
 </tr>
 </table>
