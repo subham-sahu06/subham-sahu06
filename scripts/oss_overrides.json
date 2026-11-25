@@ -98,7 +98,7 @@
     "sub": "The Linux Foundation",
     "rank": 15
   },
-  "Swatikantamishra8/AuralisOS#6": {
+  "Swatikantamishra8/AuralisOS#7": {
     "org": "AuralisOS",
     "sub": "Alpine-based Linux OS",
     "desc": "Tested the VM ISO in QEMU/KVM and fixed 8 issues in separate commits: zram swap was never created (<code>150%: bad number</code>), <code>binfmt_misc</code> was not mounted so .exe and .dmg files never reached the router, iwd did not start, the router prompt defaulted to Yes, VirtualBox detection matched every machine, and two boot errors (Shell, Go)",
