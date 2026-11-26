@@ -54,7 +54,7 @@ class SubhamSahu:
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
 <td><a href="https://github.com/OpenPrinting/cups/pull/1829">cups #1829</a>: Fixed <code>_ppdCreateFromIPP()</code> for printers that report media sizes without a PPD name (e.g. <code>jpn_chou2</code>): a crash on 2.4.x and empty PageSize names on master. Reviewed by CUPS lead Michael Sweet (C, fixes #1828)</td>
-<td><img src="https://img.shields.io/badge/In%20Review-0d1117?style=flat-square&logo=github&logoColor=26A641" alt="In review" /></td>
+<td><img src="https://img.shields.io/badge/Merged-39D353?style=flat-square&logo=github&logoColor=0d1117" alt="Merged" /></td>
 </tr>
 <tr>
 <td><b>OpenPrinting</b><br/><sub>The Linux Foundation</sub></td>
