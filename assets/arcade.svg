@@ -18,9 +18,9 @@
 <circle class="s" cx="430" cy="206" r="1.2" fill="#7ee787" style="animation-delay:2.8s"/>
 <circle class="s" cx="790" cy="210" r="1.2" fill="#7ee787" style="animation-delay:3.2s"/>
 <circle class="s" cx="812" cy="205" r="1.2" fill="#7ee787" style="animation-delay:3.6s"/>
-<text class="t" x="24" y="34" font-size="11" fill="#26a641">SCORE: 199</text>
-<text class="t" x="256" y="34" font-size="11" fill="#7ee787">RANK: LVL 8 · OPEN SOURCE PILOT</text>
-<text class="t" x="545" y="34" font-size="11" fill="#39d353">COMBO: x30 DAYS</text>
+<text class="t" x="24" y="34" font-size="11" fill="#26a641">SCORE: 204</text>
+<text class="t" x="256" y="34" font-size="11" fill="#7ee787">RANK: LVL 9 · OPEN SOURCE PILOT</text>
+<text class="t" x="545" y="34" font-size="11" fill="#39d353">COMBO: x31 DAYS</text>
 <text class="t" x="702" y="34" font-size="11" fill="#7ee787">SHIELDS: 100%</text>
 <rect x="794" y="26" width="3" height="9" fill="#7ee787"/>
 <rect x="798" y="26" width="3" height="9" fill="#7ee787"/>
@@ -416,6 +416,7 @@
 <rect x="798" y="86" width="11" height="11" rx="2" fill="#006d32"><title>2026-11-23: 6</title></rect>
 <rect x="798" y="100" width="11" height="11" rx="2" fill="#006d32"><title>2026-11-24: 6</title></rect>
 <rect x="798" y="114" width="11" height="11" rx="2" fill="#0e4429"><title>2026-11-25: 3</title></rect>
+<rect x="798" y="128" width="11" height="11" rx="2" fill="#006d32"><title>2026-11-26: 5</title></rect>
 <rect class="scan" x="12" y="20" width="828" height="2" fill="#7ee787" opacity=".07"/>
 <g class="zap" style="animation-delay:0.0s"><line x1="551.5" y1="184" x2="551.5" y2="97.5" stroke="#7ee787" stroke-width="2.5" opacity=".9"/><line x1="551.5" y1="184" x2="551.5" y2="97.5" stroke="#ffffff" stroke-width="1" opacity=".9"/><rect x="544.0" y="84.0" width="15" height="15" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g><circle class="lock" style="animation-delay:0.0s" cx="551.5" cy="91.5" r="11" fill="none" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="4 3"/><g class="zap" style="animation-delay:2.2s"><line x1="607.5" y1="184" x2="607.5" y2="167.5" stroke="#7ee787" stroke-width="2.5" opacity=".9"/><line x1="607.5" y1="184" x2="607.5" y2="167.5" stroke="#ffffff" stroke-width="1" opacity=".9"/><rect x="600.0" y="154.0" width="15" height="15" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g><circle class="lock" style="animation-delay:2.2s" cx="607.5" cy="161.5" r="11" fill="none" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="4 3"/><g class="zap" style="animation-delay:4.4s"><line x1="663.5" y1="184" x2="663.5" y2="153.5" stroke="#7ee787" stroke-width="2.5" opacity=".9"/><line x1="663.5" y1="184" x2="663.5" y2="153.5" stroke="#ffffff" stroke-width="1" opacity=".9"/><rect x="656.0" y="140.0" width="15" height="15" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g><circle class="lock" style="animation-delay:4.4s" cx="663.5" cy="147.5" r="11" fill="none" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="4 3"/><g class="zap" style="animation-delay:6.6s"><line x1="747.5" y1="184" x2="747.5" y2="111.5" stroke="#7ee787" stroke-width="2.5" opacity=".9"/><line x1="747.5" y1="184" x2="747.5" y2="111.5" stroke="#ffffff" stroke-width="1" opacity=".9"/><rect x="740.0" y="98.0" width="15" height="15" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/></g><circle class="lock" style="animation-delay:6.6s" cx="747.5" cy="105.5" r="11" fill="none" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="4 3"/><g class="ship"><g transform="translate(0,200) scale(1.5)"><circle cx="0" cy="-4" r="9" fill="none" stroke="#7ee787" stroke-width=".7" opacity=".5"/><path d="M0,-12 L7,6 L0,2 L-7,6 Z" fill="#39d353"/><path d="M-3,6 L0,12 L3,6 Z" fill="#26a641" class="b"/></g></g>
 <text class="t" x="24" y="232" font-size="8" fill="#8b949e">POWER: LOW</text>
